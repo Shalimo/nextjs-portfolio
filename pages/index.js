@@ -10,11 +10,11 @@ export default function Home(props) {
 }
 
 export const getStaticProps = async () => {
-  const links = await axios.get(`${API_URL}/projects`).then(({data}) => data)
+  const projects = await axios.get(`${API_URL}/projects`).then(({data}) => data)
 
   return {
     props: {
-      links
+      projects
     },
     revalidate: 60
   }
