@@ -5,13 +5,13 @@ import Projects from './projects/projects'
 
 import styles from './Main.module.scss'
 
-const Main = ({ projects }) => {
+const Main = ({ projects, skills, about }) => {
 	return (
 		<section className={styles.section}>
 			<MetaTitle title={'Portfolio'} />
 			<div className={styles.container}>
-				<About />
-				<Projects data={projects} />
+				<About skills={skills} about={about} />
+				<Projects projects={projects} />
 				<Contacts />
 			</div>
 		</section>

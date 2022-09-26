@@ -1,4 +1,4 @@
-const Projects = ({ data }) => {
+const Projects = ({ projects }) => {
 	return <div>projects</div>
 }
 

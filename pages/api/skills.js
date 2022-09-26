@@ -15,3 +15,7 @@ const skills = [
         id: 5, path: '../../public/skills/REACT_NATIVE.png'
     },
 ]
+
+export default function handler(req, res) {
+    res.status(200).json(skills)
+  }
