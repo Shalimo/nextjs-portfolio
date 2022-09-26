@@ -6,7 +6,7 @@ const About = ({ skills, about }) => {
 	return (
 		<about className={styles.about}>
 			<div className={styles.left}>
-				<Introduction introduction={about.introduction} />
+				<Introduction introduction={about.introduction} skills={skills} />
 			</div>
 			<div className={styles.right}>
 				<Avatar avatar={about.avatar} />
