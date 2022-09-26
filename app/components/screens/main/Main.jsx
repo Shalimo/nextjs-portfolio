@@ -1,6 +1,10 @@
-const Main = () => {
+import styles from "./Main.module.scss"
+
+const Main = ({projects}) => {
     return(
-        <div>Home</div>
+        <section className={styles.section}>
+            <div>Home</div>
+        </section>
     )
 }
 
