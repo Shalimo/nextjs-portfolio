@@ -1,7 +1,7 @@
 const about = {
     avatar: '../../public/icons/me.jpg',
     introduction: 
-    "Hello, i'm Nikita Shalimo Junior front-end developer based in Minsk Skills:"
+    "<p>Hello, i'm</p>" + "<p>Nikita Shalimo</p>" + "<p>Junior front-end developer based in Minsk</p>"
 }
 
 export default function handler(req, res) {

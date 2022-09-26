@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const primaryColor = '#4F4F4F'
+const headerColor = '#e6d2fc'
 const backgroundColor = '#e6e6fa'
 
 module.exports = {
@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryColors: primaryColor, backgroundColor
+        headerColor: headerColor,
+        backgroundColor: backgroundColor
       }
     },
   },

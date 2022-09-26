@@ -1,0 +1,19 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    height: 89vh;
+}
+
+.left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
