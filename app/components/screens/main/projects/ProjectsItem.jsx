@@ -5,12 +5,13 @@ import { useShowInfo } from '../../../../hooks/useShowInfo'
 import styles from './Projects.module.scss'
 
 const ProjectsItem = ({ item }) => {
-	const { onShowInfo, info, showItems, setShotItems } = useShowInfo(false)
+	const { onShowInfo, info, showItems, setShotItems, ref } = useShowInfo(false)
 	return (
 		<div className={styles.projectContainer}>
 			<div className={styles.projectContent}>
 				<div className={styles.projectInfo}>
 					<button
+						ref={ref}
 						onClick={() => {
 							onShowInfo(item), setShotItems(!showItems)
 						}}
