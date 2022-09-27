@@ -6,7 +6,7 @@ import Contacts from './contacts/Contacts'
 
 import styles from './Main.module.scss'
 
-const Main = ({ projects, skills, about }) => {
+const Main = ({ projects, skills, about, contacts }) => {
 	return (
 		<section className={styles.section}>
 			<MetaTitle title={'Portfolio'} />
@@ -20,7 +20,7 @@ const Main = ({ projects, skills, about }) => {
 				<div className={styles.borderContainer}>
 					<div className={styles.border}></div>
 				</div>
-				<Contacts />
+				<Contacts contacts={contacts} />
 			</div>
 		</section>
 	)
