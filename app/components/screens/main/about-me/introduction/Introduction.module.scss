@@ -24,6 +24,7 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1;
+    margin-right: 20px;
     margin-top: 20px;
     padding: 1em 2.8em;
     text-decoration: none;
@@ -58,7 +59,7 @@
     flex-direction: row;
     justify-content: center;
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 80px;
 }
 
 .skillsContainer {
@@ -85,4 +86,7 @@
 
 .skillTitle {
     font-size: 15px;
+}
+.buttons {
+    display: flex;
 }
