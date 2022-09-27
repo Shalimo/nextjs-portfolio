@@ -118,3 +118,47 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
 }
+.infoButton {
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 170px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 0.6em;
+    color: #000;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-weight: 400;
+    padding: 0.4em 0.5em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.infoButton:hover,
+.infoButton:focus {
+    color: #000;
+    outline: 0;
+}
+
+.infoButton {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.infoButton:hover {
+    box-shadow: 0 0 40px 40px #987fb3 inset;
+}

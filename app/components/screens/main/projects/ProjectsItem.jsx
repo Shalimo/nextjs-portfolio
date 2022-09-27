@@ -8,6 +8,7 @@ const ProjectsItem = ({ item }) => {
 		<div className={styles.projectContainer}>
 			<div className={styles.projectContent}>
 				<div className={styles.projectInfo}>
+					<button className={styles.infoButton}>about</button>
 					<p className={styles.projectName}>{item.title}</p>
 					{item.url ? (
 						<button className={styles.projectButton}>
