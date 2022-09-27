@@ -3,6 +3,7 @@ import Header from './header/Header'
 import About from './about-me/About'
 import Projects from './projects/Projects'
 import Contacts from './contacts/Contacts'
+import Footer from './footer/Footer'
 
 import styles from './Main.module.scss'
 
@@ -21,6 +22,7 @@ const Main = ({ projects, skills, about, contacts }) => {
 					<div className={styles.border}></div>
 				</div>
 				<Contacts contacts={contacts} />
+				<Footer />
 			</div>
 		</section>
 	)

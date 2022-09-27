@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    @apply bg-headerColor
+}
+
+.container {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text {
+    font-weight: 700;
+}
+
+.link:hover {
+    text-shadow: 1px 1px 1px rgb(140, 0, 255);
+}
