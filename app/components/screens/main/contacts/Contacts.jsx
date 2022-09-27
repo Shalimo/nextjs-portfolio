@@ -1,8 +1,11 @@
 import styles from './Contacts.module.scss'
 import Image from 'next/image'
 import { APP_URL } from '../../../../constants'
+import { useEmail } from '../../../../hooks/useEmail'
 
 const Contacts = ({ contacts }) => {
+	const { done, sendData, formRef } = useEmail()
+
 	return (
 		<div className={styles.container}>
 			<p className={styles.mainTitle}>GET IN TOUCH</p>
@@ -22,29 +25,23 @@ const Contacts = ({ contacts }) => {
 					)
 				})}
 			</div>
-			<form className={styles.form}>
+			<form ref={formRef} className={styles.form} onSubmit={sendData}>
 				<input
 					className={styles.input}
 					type="text"
-					placeholder="Name"
+					placeholder="Your name"
 					name="user_name"
 				/>
 				<input
 					className={styles.input}
 					type="text"
-					placeholder="Subject"
-					name="subject"
-				/>
-				<input
-					className={styles.input}
-					type="text"
-					placeholder="Email"
+					placeholder="Your email"
 					name="user_email"
 				/>
 				<textarea
 					className={styles.textarea}
 					rows="5"
-					placeholder="Message"
+					placeholder="Your message"
 					name="message"
 				></textarea>
 				<button className={styles.submitButton}>Submit</button>
