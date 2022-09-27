@@ -3,9 +3,13 @@ import Image from 'next/image'
 import { APP_URL } from '../../../../constants'
 import { useEmail } from '../../../../hooks/useEmail'
 import Spinner from '../../../ui/spinner/Spinner'
+import { useEffect } from 'react'
 
 const Contacts = ({ contacts }) => {
-	const { done, loading, sendData, formRef } = useEmail()
+	const { done, loading, sendData, formRef, error } = useEmail()
+	useEffect(() => {
+		console.log(formRef)
+	}, [formRef])
 
 	return (
 		<div className={styles.container}>
@@ -47,6 +51,7 @@ const Contacts = ({ contacts }) => {
 				></textarea>
 				<button className={styles.submitButton}>Submit</button>
 			</form>
+			{error && <div className={styles.noData}>Not all data entered</div>}
 			{loading && (
 				<div className={styles.spinner}>
 					<Spinner />

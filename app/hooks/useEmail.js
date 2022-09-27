@@ -6,20 +6,25 @@ export const useEmail = () => {
     const formRef = useRef();
     const [done, setDone] = useState(false);
     const [loading, setLodaing] = useState(false)
+    const [error, setError] = useState(false)
 
     const sendData = (e) => {
         e.preventDefault();
-        setLodaing(true)
-        emailjs.sendForm('service_2aipf7v', 'template_abezvej', formRef.current, 'I-sVFmjXGCpl4NZAv')
-        .then((result) => {
-            console.log(result.text);
-            setLodaing(false)
-            setDone(true);
-        }, (error) => {
-            console.log(error.text);
-        }).finally (() => {
-            formRef.current.reset(); 
-        })
+        if (formRef.current[0].value.length === 0 || formRef.current[1].value.length === 0 || formRef.current[2].value.length === 0) {
+            setError(true)
+        } else {
+            setLodaing(true)
+            emailjs.sendForm('service_2aipf7v', 'template_abezvej', formRef.current, 'I-sVFmjXGCpl4NZAv')
+                .then((result) => {
+                    console.log(result.text);
+                    setLodaing(false)
+                    setDone(true);
+                }, (error) => {
+                    console.log(error.text);
+                }).finally (() => {
+                    formRef.current.reset(); 
+                })
+        } 
     }
 
     useEffect(() => {
@@ -28,5 +33,11 @@ export const useEmail = () => {
         }, 2000)
     }, [done])
 
-    return {done, loading, sendData, formRef}
+    useEffect(() => {
+        setTimeout(() => {
+            setError(false)
+        }, 2000)
+    }, [error])
+
+    return {done, loading, sendData, formRef, error}
 }
