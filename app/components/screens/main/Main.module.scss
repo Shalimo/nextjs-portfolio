@@ -4,3 +4,15 @@
 .container {
     max-width: 1000vh;
 }
+.borderContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    height: 5px;
+    width: 80%;
+    @apply bg-purple-400;
+    opacity: 0.3;
+    border-radius: 5px;
+}
