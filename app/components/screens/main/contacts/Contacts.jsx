@@ -2,9 +2,10 @@ import styles from './Contacts.module.scss'
 import Image from 'next/image'
 import { APP_URL } from '../../../../constants'
 import { useEmail } from '../../../../hooks/useEmail'
+import Spinner from '../../../ui/spinner/Spinner'
 
 const Contacts = ({ contacts }) => {
-	const { done, sendData, formRef } = useEmail()
+	const { done, loading, sendData, formRef } = useEmail()
 
 	return (
 		<div className={styles.container}>
@@ -46,6 +47,14 @@ const Contacts = ({ contacts }) => {
 				></textarea>
 				<button className={styles.submitButton}>Submit</button>
 			</form>
+			{loading && (
+				<div className={styles.spinner}>
+					<Spinner />
+				</div>
+			)}
+			{done && (
+				<div className={styles.successMessage}>Message sent successfully</div>
+			)}
 		</div>
 	)
 }
