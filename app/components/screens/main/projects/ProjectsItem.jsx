@@ -26,9 +26,9 @@ const ProjectsItem = ({ item }) => {
 					)}
 					<p className={styles.projectName}>{item.title}</p>
 					{item.url ? (
-						<button className={styles.projectButton}>
-							<a href={item.url ? item.url : '#'}>Code</a>
-						</button>
+						<a target="_blank" href={item.url ? item.url : '#'}>
+							<button className={styles.projectButton}>Code</button>
+						</a>
 					) : (
 						<p className={styles.privateProject}>Private</p>
 					)}

@@ -40,11 +40,9 @@ const Introduction = ({ introduction, skills }) => {
 						})}
 					</div>
 				)}
-				<button className={styles.btn}>
-					<a target="_blank" href={APP_CV}>
-						Download CV
-					</a>
-				</button>
+				<a target="_blank" href={APP_CV}>
+					<button className={styles.btn}>Download CV</button>
+				</a>
 			</div>
 		</div>
 	)
