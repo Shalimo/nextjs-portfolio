@@ -1,14 +1,28 @@
 import Image from 'next/image'
 import { APP_URL } from '../../../../constants'
+import { useShowInfo } from '../../../../hooks/useShowInfo'
 
 import styles from './Projects.module.scss'
 
 const ProjectsItem = ({ item }) => {
+	const { onShowInfo, info, showItems, setShotItems } = useShowInfo(false)
 	return (
 		<div className={styles.projectContainer}>
 			<div className={styles.projectContent}>
 				<div className={styles.projectInfo}>
-					<button className={styles.infoButton}>about</button>
+					<button
+						onClick={() => {
+							onShowInfo(item), setShotItems(!showItems)
+						}}
+						className={styles.infoButton}
+					>
+						about
+					</button>
+					{showItems && (
+						<div className={styles.projectInfoContainer}>
+							<p className={styles.info}>{info.title}</p>
+						</div>
+					)}
 					<p className={styles.projectName}>{item.title}</p>
 					{item.url ? (
 						<button className={styles.projectButton}>

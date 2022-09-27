@@ -162,3 +162,18 @@
 .infoButton:hover {
     box-shadow: 0 0 40px 40px #987fb3 inset;
 }
+.projectInfoContainer {
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-color: #c1afd4;
+    padding: 12px;
+    z-index: 1000;
+    margin-top: -180px;
+    border: 1px solid #000;
+    border-radius: 0.6em;
+}
+
+.info {
+    font-size: 12px;
+}
