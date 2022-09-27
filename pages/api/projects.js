@@ -14,7 +14,7 @@ const links = [
       path: '../../public/icons/terminal.png'
     },
     url: '',
-    title: 'Terminal for restaurants',
+    title: 'Restaurants Terminal',
     description: 'Commercial project from MVP Connect. React native app. Poster analogue. Layout of all screens using Figma. Adding dynamics.'
   },
   {

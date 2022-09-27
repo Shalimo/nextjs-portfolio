@@ -24,6 +24,9 @@
     justify-content: center
 }
 
+.projectContent {
+    height: 20px;
+}
 .projectsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -41,4 +44,77 @@
 .image {
     opacity: 0.5;
     border-radius: 10px;
+    position: relative;
+    }
+    
+    .projectInfo {
+        width: 250px;
+        height: 350px;
+        position: absolute;
+        z-index: 1000;
+        margin: 15% 0 5% 17px;
+    
+    }
+    
+    .projectName {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .projectButton {
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid #000;
+        border-radius: 0.6em;
+        color: #000;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1;
+        margin-top: 20px;
+        padding: 0.7em 2.8em;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+    
+    .projectButton:hover,
+    .projectButton:focus {
+        color: #000;
+        outline: 0;
+    }
+    
+    .projectButton {
+        -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+        transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    }
+    
+    .projectButton:hover {
+        box-shadow: 0 0 40px 40px #987fb3 inset;
+    }
+    
+    .privateProject {
+        width: 150px;
+        @apply bg-headerColor;
+        border: 2px solid #000;
+        border-radius: 0.6em;
+        color: #000;
+        margin-top: 20px;
+        padding: 0.5em 2.6em;
+        // text-align: center;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
 }

@@ -7,6 +7,16 @@ const ProjectsItem = ({ item }) => {
 	return (
 		<div className={styles.projectContainer}>
 			<div className={styles.projectContent}>
+				<div className={styles.projectInfo}>
+					<p className={styles.projectName}>{item.title}</p>
+					{item.url ? (
+						<button className={styles.projectButton}>
+							<a href={item.url ? item.url : '#'}>Code</a>
+						</button>
+					) : (
+						<p className={styles.privateProject}>Private</p>
+					)}
+				</div>
 				<Image
 					key={item.id}
 					src={`/${APP_URL}/${item.icon.path}`}
