@@ -7,7 +7,7 @@ import Footer from './footer/Footer'
 
 import styles from './Main.module.scss'
 
-const Main = ({ projects, skills, about, contacts }) => {
+const Main = ({ projects, skills, about, contacts, social }) => {
 	return (
 		<section className={styles.section}>
 			<MetaTitle title={'Portfolio'} />
@@ -22,7 +22,7 @@ const Main = ({ projects, skills, about, contacts }) => {
 					<div className={styles.border}></div>
 				</div>
 				<Contacts contacts={contacts} />
-				<Footer />
+				<Footer social={social} />
 			</div>
 		</section>
 	)

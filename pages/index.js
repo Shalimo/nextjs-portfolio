@@ -14,13 +14,15 @@ export const getStaticProps = async () => {
   const about = await axios.get(`${API_URL}/about`).then(({data}) => data)
   const skills = await axios.get(`${API_URL}/skills`).then(({data}) => data)
   const contacts = await axios.get(`${API_URL}/contacts`).then(({data}) => data)
+  const social = await axios.get(`${API_URL}/social`).then(({data}) => data)
 
   return {
     props: {
       projects,
       about,
       skills,
-      contacts
+      contacts,
+      social
     },
     revalidate: 60
   }
