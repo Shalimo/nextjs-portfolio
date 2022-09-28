@@ -4,7 +4,7 @@ import Avatar from './avatar/Avatar'
 
 const About = ({ skills, about }) => {
 	return (
-		<about className={styles.about}>
+		<about id="About" className={styles.about}>
 			<div className={styles.left}>
 				<Introduction introduction={about.introduction} skills={skills} />
 			</div>

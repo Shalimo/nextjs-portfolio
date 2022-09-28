@@ -12,7 +12,7 @@ const Contacts = ({ contacts }) => {
 	}, [formRef])
 
 	return (
-		<div className={styles.container}>
+		<div id="Contacts" className={styles.container}>
 			<p className={styles.mainTitle}>GET IN TOUCH</p>
 			<div className={styles.contactsContainer}>
 				{contacts.map((item, i) => {

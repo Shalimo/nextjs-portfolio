@@ -3,7 +3,7 @@ import ProjectsItem from './ProjectsItem'
 
 const Projects = ({ projects }) => {
 	return (
-		<div className={styles.container}>
+		<div id="Projects" className={styles.container}>
 			<div className={styles.titles}>
 				<p className={styles.title}>Portfolio</p>
 				<p className={styles.subtitle}>Creative Works</p>
