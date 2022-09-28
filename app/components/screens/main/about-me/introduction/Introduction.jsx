@@ -11,7 +11,7 @@ const Introduction = ({ introduction, skills }) => {
 
 	return (
 		<div className={styles.intro}>
-			{introduction ? parse(introduction) : null}
+			{introduction ? introduction : null}
 			<div className={styles.buttons}>
 				<button
 					ref={ref}
