@@ -1,8 +1,19 @@
+@import '../../../../assets/styles/media';
+
 .about {
     display: flex;
     flex-direction: row;
     padding-top: 165px;
         padding-bottom: 100px;
+        @include media(laptop) {
+            flex-direction: column;
+        }
+        @include media(tablet) {
+            flex-direction: column;
+        }
+        @include media(mobile) {
+            flex-direction: column;
+        }
 }
 
 .left {
@@ -10,6 +21,15 @@
     flex: 1;
     align-items: center;
     justify-content: center;
+    @include media(laptop) {
+        margin-bottom: 40px;
+    }
+    @include media(tablet) {
+        margin-bottom: 40px;
+    }
+    @include media(mobile) {
+        margin-bottom: 40px;
+    }
 }
 
 .right {

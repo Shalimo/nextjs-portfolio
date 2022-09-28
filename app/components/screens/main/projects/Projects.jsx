@@ -8,12 +8,10 @@ const Projects = ({ projects }) => {
 				<p className={styles.title}>Portfolio</p>
 				<p className={styles.subtitle}>Creative Works</p>
 			</div>
-			<div className={styles.portfolioContainer}>
-				<div className={styles.projectsContainer}>
-					{projects.map((item, i) => {
-						return <ProjectsItem key={item.id} item={item} />
-					})}
-				</div>
+			<div className={styles.projectsContainer}>
+				{projects.map(item => {
+					return <ProjectsItem key={item.id} item={item} />
+				})}
 			</div>
 		</div>
 	)

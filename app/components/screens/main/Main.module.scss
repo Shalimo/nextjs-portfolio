@@ -1,9 +1,13 @@
+@import '../../../assets/styles/media';
+
 .section {
-    min-height: 100vh;
+    @apply relative overflow-hidden;
+    .container {
+        max-width: 100%;
+        
+    }
 }
-.container {
-    max-width: 1000vh;
-}
+
 .borderContainer {
     display: flex;
     justify-content: center;

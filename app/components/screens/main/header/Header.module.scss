@@ -1,3 +1,5 @@
+@import './../../../../assets/styles/media';
+
 .header {
     display: flex;
     justify-content: flex-end;
@@ -7,6 +9,15 @@
     height: auto;
     padding: 18px;
     @apply bg-headerColor;
+    @include media(laptop) {
+        margin-right: 140px;
+    }
+    @include media(tablet) {
+        justify-content: center;
+    }
+    @include media(mobile) {
+        justify-content: center;
+    }
 }
 
 .container {
@@ -14,5 +25,14 @@
     display: flex;
     justify-content: space-around;
     margin-right: 130px;
+    @include media(laptop) {
+        margin-right: 140px;
+    }
+    @include media(tablet) {
+        margin-right: 0px;
+    }
+    @include media(mobile) {
+        margin-right: 0px;
+    }
 }
 

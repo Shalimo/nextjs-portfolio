@@ -1,8 +1,13 @@
+@import '../../../../assets/styles/media';
 .container {
     padding-top: 80px;
     padding-bottom: 60px;
     position: relative;
+    width: 100%;
         z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
 }
 
 .titles {
@@ -33,6 +38,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
+    @include media(laptop) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include media(tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include media(mobile) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .projectContainer {
@@ -52,9 +66,9 @@
     .projectInfo {
         width: 250px;
         height: 350px;
-        position: absolute;
+        position: relative;
         z-index: 1000;
-        margin: 15% 0 5% 17px;
+        margin: 100% 0 -241% 17px;
     
     }
     
