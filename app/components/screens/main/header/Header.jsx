@@ -4,21 +4,21 @@ const Header = () => {
 	return (
 		<header className={styles.header}>
 			<div className={styles.container}>
-				<p className={styles.text}>
-					<a className={styles.link} href="#">
-						About
-					</a>
-				</p>
-				<p className={styles.text}>
-					<a className={styles.link} href="#">
-						Projects
-					</a>
-				</p>
-				<p className={styles.text}>
-					<a className={styles.link} href="#">
-						Contacts
-					</a>
-				</p>
+				<div class={styles.box}>
+					<div class={styles.btn}>
+						<span>ABOUT</span>
+					</div>
+				</div>
+				<div class={styles.box}>
+					<div class={styles.btn}>
+						<span>PROJECTS</span>
+					</div>
+				</div>
+				<div class={styles.box}>
+					<div class={styles.btn}>
+						<span>CONTACTS</span>
+					</div>
+				</div>
 			</div>
 		</header>
 	)
