@@ -11,7 +11,7 @@ const Introduction = ({ introduction, skills }) => {
 
 	return (
 		<div className={styles.intro}>
-			{/* {introduction ? introduction : null} */}
+			{introduction ? introduction : null}
 			<div className={styles.buttons}>
 				<button
 					ref={ref}
@@ -29,8 +29,8 @@ const Introduction = ({ introduction, skills }) => {
 									return (
 										<div className={styles.skill}>
 											<Image
-												key={item.id}
-												src={`/${APP_URL}/${item.path}`}
+												key={item.id ? item.id : null}
+												src={`/${APP_URL}/${item.path ? item.path : null}`}
 												width={80}
 												height={80}
 												quality={100}
