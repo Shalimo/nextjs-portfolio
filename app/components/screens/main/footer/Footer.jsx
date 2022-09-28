@@ -7,15 +7,17 @@ const Footer = ({ social }) => {
 				<p className={styles.text}>© 2022. All rights reserved</p>
 			</div>
 			<div className={styles.social}>
-				{social.map(item => {
-					return (
-						<div key={item.id} class={styles.box}>
-							<a href={item.path} target="_blank" class={styles.btn}>
-								<span>{item.title}</span>
-							</a>
-						</div>
-					)
-				})}
+				{social
+					? social.map(item => {
+							return (
+								<div key={item.id} class={styles.box}>
+									<a href={item.path} target="_blank" class={styles.btn}>
+										<span>{item.title}</span>
+									</a>
+								</div>
+							)
+					  })
+					: null}
 			</div>
 		</header>
 	)

@@ -15,20 +15,22 @@ const Contacts = ({ contacts }) => {
 		<div id="Contacts" className={styles.container}>
 			<p className={styles.mainTitle}>GET IN TOUCH</p>
 			<div className={styles.contactsContainer}>
-				{contacts.map((item, i) => {
-					return (
-						<div className={styles.content}>
-							<Image
-								key={item.id}
-								src={`/${APP_URL}/${item.path}`}
-								width={100}
-								height={100}
-								quality={100}
-							/>
-							<p className={styles.title}>{item.title}</p>
-						</div>
-					)
-				})}
+				{contacts
+					? contacts.map((item, i) => {
+							return (
+								<div className={styles.content}>
+									<Image
+										key={item.id}
+										src={`/${APP_URL}/${item.path}`}
+										width={100}
+										height={100}
+										quality={100}
+									/>
+									<p className={styles.title}>{item.title}</p>
+								</div>
+							)
+					  })
+					: null}
 			</div>
 			<form ref={formRef} className={styles.form} onSubmit={sendData}>
 				<input

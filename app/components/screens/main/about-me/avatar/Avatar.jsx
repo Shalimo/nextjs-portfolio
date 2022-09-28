@@ -7,7 +7,7 @@ const Avatar = ({ avatar }) => {
 	return (
 		<div className={styles.image}>
 			<Image
-				src={`/${APP_URL}/${avatar}`}
+				src={`/${APP_URL}/${avatar ? avatar : null}`}
 				width={500}
 				height={500}
 				quality={100}

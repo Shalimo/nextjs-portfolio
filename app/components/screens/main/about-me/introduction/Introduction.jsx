@@ -11,7 +11,7 @@ const Introduction = ({ introduction, skills }) => {
 
 	return (
 		<div className={styles.intro}>
-			{parse(introduction)}
+			{introduction ? parse(introduction) : null}
 			<div className={styles.buttons}>
 				<button
 					ref={ref}
@@ -24,20 +24,22 @@ const Introduction = ({ introduction, skills }) => {
 				</button>
 				{showSkills && (
 					<div className={styles.skillsContainer}>
-						{skills.map((item, i) => {
-							return (
-								<div className={styles.skill}>
-									<Image
-										key={item.id}
-										src={`/${APP_URL}/${item.path}`}
-										width={80}
-										height={80}
-										quality={100}
-									/>
-									<p className={styles.skillTitle}>{item.title}</p>
-								</div>
-							)
-						})}
+						{skills
+							? skills.map((item, i) => {
+									return (
+										<div className={styles.skill}>
+											<Image
+												key={item.id}
+												src={`/${APP_URL}/${item.path}`}
+												width={80}
+												height={80}
+												quality={100}
+											/>
+											<p className={styles.skillTitle}>{item.title}</p>
+										</div>
+									)
+							  })
+							: null}
 					</div>
 				)}
 				<a target="_blank" href={APP_CV}>
