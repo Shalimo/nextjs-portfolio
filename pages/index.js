@@ -10,11 +10,18 @@ export default function Home(props) {
 }
 
 export const getStaticProps = async () => {
-  const projects = await axios.get(`${API_URL}/projects`).then(({data}) => data)
+  try {
+    const projects = await axios.get(`${API_URL}/projects`).then(({data}) => data)
   const about = await axios.get(`${API_URL}/about`).then(({data}) => data)
   const skills = await axios.get(`${API_URL}/skills`).then(({data}) => data)
   const contacts = await axios.get(`${API_URL}/contacts`).then(({data}) => data)
   const social = await axios.get(`${API_URL}/social`).then(({data}) => data)
+
+  if (!projects || !about || !skills || !contacts || !social) {
+    return {
+      notFound: true,
+    }
+  }
 
   return {
     props: {
@@ -26,4 +33,19 @@ export const getStaticProps = async () => {
     },
     revalidate: 60
   }
+  } catch {
+    return {
+      props: {
+        projects: null,
+      about: null,
+      skills: null,
+      contacts: null,
+      social: null
+      }
+    }
+  } 
+  
+  
+
+  
 }
