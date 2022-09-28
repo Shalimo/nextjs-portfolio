@@ -30,8 +30,7 @@ export const getStaticProps = async () => {
       skills,
       contacts,
       social
-    },
-    revalidate: 60
+    }
   }
   } catch {
     return {
