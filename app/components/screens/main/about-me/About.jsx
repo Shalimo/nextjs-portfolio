@@ -7,7 +7,7 @@ const About = ({ skills, about }) => {
 		<about id="About" className={styles.about}>
 			<div className={styles.left}>
 				<Introduction
-					introduction={about.introduction ? about.introduction : null}
+					introduction={about ? about : null}
 					skills={skills ? skills : null}
 				/>
 			</div>
