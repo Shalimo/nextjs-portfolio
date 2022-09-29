@@ -19,7 +19,8 @@
     "react-inlinesvg": "^3.0.1",
     "react-scroll": "^1.8.7",
     "react-svg": "^15.1.9",
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "sharp": "^0.31.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
