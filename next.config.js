@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: [ 'nextjs-portfolio-1wj555.vercel.app', 'http://localhost:3000/', 'vercel.com']
+    domains: [ 'nextjs-portfolio-hjn3g1qlm-shalimo.vercel.app', 'http://localhost:3000/', 'nextjs-portfolio-shalimo.vercel.app', 'nextjs-portfolio-lovat-five.vercel.app']
 },
   env: {
     APP_URL: process.env.REACT_APP_URL,
