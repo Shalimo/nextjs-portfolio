@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { APP_URL } from '../../../../constants'
+import { IMAGE_URL } from '../../../../constants'
 import { useShowInfo } from '../../../../hooks/useShowInfo'
 
 import styles from './Projects.module.scss'
@@ -35,13 +36,12 @@ const ProjectsItem = ({ item }) => {
 				</div>
 				<Image
 					key={item.id}
-					src={`/nextjs-portfolio-lovat-five.vercel.app/${item.icon.path}`}
+					src={`/${IMAGE_URL}/${item.icon.path}`}
 					width={1000}
 					height={1405}
 					objectFit="cover"
 					className={styles.image}
 					quality={100}
-					priority
 				/>
 			</div>
 		</div>
