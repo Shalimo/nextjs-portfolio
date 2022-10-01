@@ -13,6 +13,10 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig
+module.exports = {
+  images: {
+    domains: ['nextjs-portfolio-lovat-five.vercel.app']
+  }
+}
 
 
