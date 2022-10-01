@@ -2,9 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['nextjs-portfolio-lovat-five.vercel.app'],
-    loader: 'default',
-    path: '/_next/image'
+    domains: ['nextjs-portfolio-lovat-five.vercel.app', 'vercel.app', 'vercel.com']
 },
   env: {
     APP_URL: process.env.REACT_APP_URL,

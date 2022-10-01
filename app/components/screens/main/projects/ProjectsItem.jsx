@@ -35,7 +35,7 @@ const ProjectsItem = ({ item }) => {
 				</div>
 				<Image
 					key={item.id}
-					src={`/${APP_URL}/${item.icon.path}`}
+					src={`/${process.env.REACT_APP_URL}/${item.icon.path}`}
 					width={1000}
 					height={1405}
 					objectFit="cover"
