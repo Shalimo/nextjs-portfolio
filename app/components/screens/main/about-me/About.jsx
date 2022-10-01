@@ -6,14 +6,12 @@ const About = ({ skills, about }) => {
 	return (
 		<about id="About" className={styles.about}>
 			<div className={styles.left}>
-				<Introduction
+				{/* <Introduction
 					introduction={about ? about : null}
 					skills={skills ? skills : null}
-				/>
+				/> */}
 			</div>
-			<div className={styles.right}>
-				<Avatar avatar={about} />
-			</div>
+			<div className={styles.right}>{/* <Avatar avatar={about} /> */}</div>
 		</about>
 	)
 }
