@@ -38,9 +38,9 @@ const ProjectsItem = ({ item }) => {
 					src={`/${APP_URL}/${item.icon.path}`}
 					width={1000}
 					height={1405}
-					objectFit="cover"
+					// objectFit="cover"
 					className={styles.image}
-					quality={100}
+					// quality={100}
 				/>
 			</div>
 		</div>
