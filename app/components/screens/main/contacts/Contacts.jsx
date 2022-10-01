@@ -19,13 +19,7 @@ const Contacts = ({ contacts }) => {
 					? contacts.map((item, i) => {
 							return (
 								<div className={styles.content}>
-									<Image
-										key={item.id}
-										src={`/${APP_URL}/${item.path}`}
-										width={100}
-										height={100}
-										quality={100}
-									/>
+									<img className={styles.img} src={item.path} />
 									<p className={styles.title}>{item.title}</p>
 								</div>
 							)

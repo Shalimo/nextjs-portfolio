@@ -6,12 +6,12 @@ import { APP_CV } from '../../../../../constants'
 
 import styles from './Introduction.module.scss'
 
-const Introduction = ({ introduction, skills }) => {
+const Introduction = ({ about, skills }) => {
 	const { showSkills, setShowSkills, ref } = useShowSkills(false)
 
 	return (
 		<div className={styles.intro}>
-			{introduction.introduction ? parse(introduction.introduction) : null}
+			{about.introduction ? parse(about.introduction) : null}
 			<div className={styles.buttons}>
 				<button
 					ref={ref}
@@ -42,7 +42,7 @@ const Introduction = ({ introduction, skills }) => {
 							: null}
 					</div>
 				)}
-				<a target="_blank" href={APP_CV}>
+				<a target="_blank" href={about.cv}>
 					<button className={styles.btn}>Download CV</button>
 				</a>
 			</div>
