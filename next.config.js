@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['euphonious-belekoy-34b203.netlify.app/']
+    domains: ['main--euphonious-belekoy-34b203.netlify.app', 'euphonious-belekoy-34b203.netlify.app']
 },
   env: {
     APP_URL: process.env.REACT_APP_URL,
