@@ -33,9 +33,11 @@ const ProjectsItem = ({ item }) => {
 						<p className={styles.privateProject}>Private</p>
 					)}
 				</div>
-				<img
+				<Image
 					key={item.id}
 					src={`/${APP_URL}/${item.icon.path}`}
+					width={1000}
+					height={1405}
 					className={styles.image}
 				/>
 			</div>
