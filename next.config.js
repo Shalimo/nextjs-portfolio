@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['nextjs-portfolio-lovat-five.vercel.app, https://nextjs-portfolio-lovat-five.vercel.app'],
+    domains: ['nextjs-portfolio-lovat-five.vercel.app, https://nextjs-portfolio-lovat-five.vercel.app/'],
     loader: 'default',
     path: '/_next/image'
 },
@@ -13,10 +13,6 @@ const nextConfig = {
   }
 }
 
-module.exports = {
-  images: {
-    domains: ['nextjs-portfolio-lovat-five.vercel.app']
-  }
-}
+module.exports = nextConfig
 
 

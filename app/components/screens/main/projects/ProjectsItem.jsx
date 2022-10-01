@@ -35,12 +35,13 @@ const ProjectsItem = ({ item }) => {
 				</div>
 				<Image
 					key={item.id}
-					src={`/${APP_URL}/${item.icon.path}`}
+					src={`/nextjs-portfolio-lovat-five.vercel.app/${item.icon.path}`}
 					width={1000}
 					height={1405}
 					objectFit="cover"
 					className={styles.image}
 					quality={100}
+					priority
 				/>
 			</div>
 		</div>
