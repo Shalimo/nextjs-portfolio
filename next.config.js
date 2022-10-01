@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['main--euphonious-belekoy-34b203.netlify.app', 'euphonious-belekoy-34b203.netlify.app', 'nextjs-portfolio-lovat-five.vercel.app'],
+    domains: ['nextjs-portfolio-lovat-five.vercel.app'],
     loader: 'default',
     path: '/_next/image'
 },
