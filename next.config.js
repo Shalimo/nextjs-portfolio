@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['nextjs-portfolio-lovat-five.vercel.app']
+    domains: ['nextjs-portfolio-lovat-five.vercel.app', 'nextjs-portfolio-shalimo.vercel.app', 'nextjs-portfolio-git-main-shalimo.vercel.app']
 },
   env: {
     APP_URL: process.env.REACT_APP_URL,
