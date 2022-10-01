@@ -1,17 +1,10 @@
 import React from 'react'
-import Image from 'next/image'
-import { APP_URL } from '../../../../../constants'
 import styles from './Avatar.module.scss'
 
 const Avatar = ({ avatar }) => {
 	return (
 		<div className={styles.image}>
-			<Image
-				src={`/${APP_URL}/${avatar.avatar ? avatar.avatar : null}`}
-				width={500}
-				height={500}
-				quality={100}
-			/>
+			<img src="/me.jpg" width="500" heigth="500" />
 		</div>
 	)
 }

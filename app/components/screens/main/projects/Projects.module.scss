@@ -31,9 +31,7 @@
     justify-content: center
 }
 
-.projectContent {
-    height: 20px;
-}
+
 .projectsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -55,7 +53,28 @@
     border: 1px solid #000;
     border-radius: 10px;
     margin: 40px;
+    position: relative;
+    overflow: hidden;
 }
+
+.projectContainer {
+    background: rgb(216, 216, 216);
+}
+
+.projectContainer::before {
+    content: '';
+    position: absolute;
+    height: 350px;
+    width: 250px;
+    border-radius: 50px;
+    transform: rotate(45deg);
+    background: linear-gradient(-90deg, #987fb3, #cebbe2);
+    top: -55%;
+    left: 45%;
+    z-index: 100;
+}
+
+
 
 .image {
     opacity: 0.5;
@@ -70,7 +89,7 @@
         height: 350px;
         position: relative;
         z-index: 1000;
-        margin: 100% 0 -241% 17px;
+        margin: 96% 0 -241% 17px;
     
     }
     
