@@ -1,216 +1,212 @@
 @import '../../../../assets/styles/media';
 .container {
-    padding-top: 80px;
-    padding-bottom: 60px;
-    position: relative;
-    width: 100%;
-        z-index: 3;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
+	padding-top: 80px;
+	padding-bottom: 60px;
+	position: relative;
+	width: 100%;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .title {
-    font-size: 40px;
-    font-weight: 600;
+	font-size: 40px;
+	font-weight: 600;
 }
 
 .subtitle {
-    font-size: 20px;
-    font-weight: 600;
+	font-size: 20px;
+	font-weight: 600;
 }
 
 .portfolioContainer {
-    display: flex;
-    justify-content: center
+	display: flex;
+	justify-content: center;
 }
-
 
 .projectsContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    @include media(laptop) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    @include media(tablet) {
-        grid-template-columns: 1fr 1fr;
-    }
-    @include media(mobile) {
-        grid-template-columns: 1fr;
-    }
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	@include media(laptop) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	@include media(tablet) {
+		grid-template-columns: 1fr 1fr;
+	}
+	@include media(mobile) {
+		grid-template-columns: 1fr;
+	}
 }
 
 .projectContainer {
-    width: 250px;
-    height: 350px;
-    border: 1px solid #000;
-    border-radius: 10px;
-    margin: 40px;
-    position: relative;
-    overflow: hidden;
+	width: 250px;
+	height: 350px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	margin: 40px;
+	position: relative;
+	overflow: hidden;
 }
 
 .projectContainer {
-    background: rgb(247, 245, 245);
+	background: rgb(247, 245, 245);
 }
 
 .projectContainer::before {
-    content: '';
-    position: absolute;
-    height: 350px;
-    width: 250px;
-    border-radius: 50px;
-    transform: rotate(45deg);
-    background: linear-gradient(-90deg, #987fb3, #cebbe2);
-    top: -55%;
-    left: 45%;
-    z-index: 100;
+	content: '';
+	position: absolute;
+	height: 350px;
+	width: 250px;
+	border-radius: 50px;
+	transform: rotate(45deg);
+	background: linear-gradient(-90deg, #987fb3, #cebbe2);
+	top: -55%;
+	left: 45%;
+	z-index: 100;
 }
-
-
 
 .image {
-    opacity: 0.5;
-    border-radius: 10px;
-    position: relative;
-    width: 1000;
-    height: 1405;
-    }
-    
-    .projectInfo {
-        width: 250px;
-        height: 350px;
-        position: relative;
-        z-index: 1000;
-        margin: 96% 0 -241% 17px;
-    
-    }
-    
-    .projectName {
-        font-size: 20px;
-        font-weight: 600;
-    }
-    
-    .projectButton {
-        box-sizing: border-box;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background-color: transparent;
-        border: 2px solid #000;
-        border-radius: 0.6em;
-        color: #000;
-        cursor: pointer;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1;
-        margin-top: 20px;
-        padding: 0.7em 2.8em;
-        text-decoration: none;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-    }
-    
-    .projectButton:hover,
-    .projectButton:focus {
-        color: #000;
-        outline: 0;
-    }
-    
-    .projectButton {
-        -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-        transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-    }
-    
-    .projectButton:hover {
-        box-shadow: 0 0 40px 40px #987fb3 inset;
-    }
-    
-    .privateProject {
-        width: 150px;
-        @apply bg-headerColor;
-        border: 2px solid #000;
-        border-radius: 0.6em;
-        color: #000;
-        margin-top: 20px;
-        padding: 0.5em 2.6em;
-        // text-align: center;
-        text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
+	opacity: 0.5;
+	border-radius: 10px;
+	position: relative;
+	width: 1000;
+	height: 1405;
+}
+
+.projectInfo {
+	width: 250px;
+	height: 350px;
+	position: relative;
+	z-index: 1000;
+	margin: 96% 0 -241% 17px;
+}
+
+.projectName {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.projectButton {
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: 2px solid #000;
+	border-radius: 0.6em;
+	color: #000;
+	cursor: pointer;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+	margin-top: 20px;
+	padding: 0.7em 2.8em;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.projectButton:hover,
+.projectButton:focus {
+	color: #000;
+	outline: 0;
+}
+
+.projectButton {
+	-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.projectButton:hover {
+	box-shadow: 0 0 40px 40px #987fb3 inset;
+}
+
+.privateProject {
+	width: 150px;
+	@apply bg-headerColor;
+	border: 2px solid #000;
+	border-radius: 0.6em;
+	color: #000;
+	margin-top: 20px;
+	padding: 0.5em 2.6em;
+	// text-align: center;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 .infoButton {
-    position: absolute;
-    margin-top: -220px;
-    margin-left: 170px;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: #fafafa;
-    border: 1px solid #000;
-    border-radius: 0.6em;
-    color: #000;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    font-weight: 400;
-    padding: 0.4em 0.5em;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 10px;
+	position: absolute;
+	margin-top: -220px;
+	margin-left: 170px;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #000;
+	border-radius: 0.6em;
+	color: #000;
+	cursor: pointer;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+	font-weight: 400;
+	padding: 0.4em 0.5em;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 10px;
 }
 
 .infoButton:hover,
 .infoButton:focus {
-    color: #000;
-    outline: 0;
+	color: #000;
+	outline: 0;
 }
 
 .infoButton {
-    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+	-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 .infoButton:hover {
-    box-shadow: 0 0 40px 40px #987fb3 inset;
+	box-shadow: 0 0 40px 40px #987fb3 inset;
 }
 .projectInfoContainer {
-    position: absolute;
-    width: auto;
-    height: auto;
-    background-color: #c1afd4;
-    padding: 12px;
-    z-index: 1000;
-    margin-top: -180px;
-    border: 1px solid #000;
-    border-radius: 0.6em;
+	position: absolute;
+	width: auto;
+	height: auto;
+	background-color: #c1afd4;
+	padding: 12px;
+	z-index: 1000;
+	margin-top: -180px;
+	border: 1px solid #000;
+	border-radius: 0.6em;
 }
 
 .info {
-    font-size: 12px;
+	font-size: 12px;
 }
