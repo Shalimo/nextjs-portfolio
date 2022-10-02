@@ -1,20 +1,24 @@
+@import '../../../../assets/styles/media';
+
 .footer {
     display: flex;
-        justify-content: space-around;
+    justify-content: space-around;
     width: 100%;
     height: auto;
-    padding: 30px;
+    padding: 25px;
     @apply bg-headerColor
 }
 
 .container {
     width: 50%;
     display: flex;
-    // justify-content: space-around;
 }
 
 .text {
     font-weight: 700;
+    @include media(mobile) {
+        font-size: 14px;
+    }
 }
 
 .link:hover {
@@ -22,7 +26,6 @@
 }
 .social {
     display: flex;
-    width: 9%;
     justify-content: space-between;
 }
 
@@ -39,6 +42,9 @@
     transition: all 0.3s;
     position: relative;
     font-size: 15px;
+    @include media(mobile) {
+        font-size: 14px;
+    }
 }
 
 .btn span {
