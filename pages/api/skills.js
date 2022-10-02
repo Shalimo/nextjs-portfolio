@@ -1,24 +1,24 @@
 const skills = [
     {
-        id: 1, path: '../../public/skills/HTML.png', title: "HTML5"
+        id: 1, path: 'https://cdn-icons-png.flaticon.com/512/1051/1051277.png', title: "HTML5"
     },
     {
-        id: 2, path: '../../public/skills/CSS.png', title: "CSS3"
+        id: 2, path: 'https://cdn-icons-png.flaticon.com/512/732/732190.png', title: "CSS3"
     },
     {
-        id: 3, path: '../../public/skills/JS.png', title: "JS"
+        id: 3, path: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', title: "JS"
     },
     {
-        id: 4, path: '../../public/skills/React.png', title: "React"
+        id: 4, path: 'https://cdn-icons-png.flaticon.com/512/969/969958.png', title: "React"
     },
     {
-        id: 5, path: '../../public/skills/ReactNative.png', title: "React Native"
+        id: 5, path: 'https://cdn-icons-png.flaticon.com/512/520/520890.png', title: "React Native"
     },
     {
-        id: 6, path: '../../public/skills/NextJS.png', title: "NextJS"
+        id: 6, path: 'https://cdn.icon-icons.com/icons2/2148/PNG/512/nextjs_icon_132160.png', title: "NextJS"
     },
     {
-        id: 7, path: '../../public/skills/Redux.png', title: "Redux"
+        id: 7, path: 'https://img.icons8.com/color/344/redux.png', title: "Redux"
     },
 ]
 

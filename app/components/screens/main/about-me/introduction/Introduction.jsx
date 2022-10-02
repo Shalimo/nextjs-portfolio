@@ -22,30 +22,29 @@ const Introduction = ({ about, skills }) => {
 				>
 					My skills
 				</button>
-				{showSkills && (
-					<div className={styles.skillsContainer}>
-						{skills
-							? skills.map((item, i) => {
-									return (
-										<div className={styles.skill}>
-											<Image
-												key={item.id ? item.id : null}
-												src={`/${APP_URL}/${item.path ? item.path : null}`}
-												width={80}
-												height={80}
-												quality={100}
-											/>
-											<p className={styles.skillTitle}>{item.title}</p>
-										</div>
-									)
-							  })
-							: null}
-					</div>
-				)}
+
 				<a target="_blank" href={about.cv}>
 					<button className={styles.btn}>Download CV</button>
 				</a>
 			</div>
+			{showSkills && (
+				<div className={styles.skillsContainer}>
+					{skills
+						? skills.map((item, i) => {
+								return (
+									<div className={styles.skill}>
+										<img
+											key={item.id}
+											src={item.path}
+											className={styles.skillIcon}
+										/>
+										<p className={styles.skillTitle}>{item.title}</p>
+									</div>
+								)
+						  })
+						: null}
+				</div>
+			)}
 		</div>
 	)
 }
