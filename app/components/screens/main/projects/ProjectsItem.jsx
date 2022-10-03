@@ -32,15 +32,6 @@ const ProjectsItem = ({ item }) => {
 					<p className={styles.privateProject}>Private</p>
 				)}
 			</div>
-			{/* <Image
-					key={item.id}
-					src={`/${process.env.REACT_APP_URL}/${item.icon.path}`}
-					width={1000}
-					height={1405}
-					objectFit="cover"
-					className={styles.image}
-					quality={100}
-				/> */}
 		</div>
 	)
 }
