@@ -168,16 +168,52 @@
 	margin-top: 585px;
 	font-size: 20px;
 	font-weight: 500;
+	@include media(computer) {
+		margin-top: 580px;
+	}
+	@include media(laptop) {
+		margin-top: 570px;
+	}
+	@include media(tablet) {
+		margin-top: 560px;
+	}
+	@include media(mobile) {
+		margin-top: 510px;
+	}
 }
 
 .spinner {
 	position: absolute;
 	margin-top: 590px;
+	@include media(computer) {
+		margin-top: 580px;
+	}
+	@include media(laptop) {
+		margin-top: 570px;
+	}
+	@include media(tablet) {
+		margin-top: 560px;
+	}
+	@include media(mobile) {
+		margin-top: 510px;
+	}
 }
 .noData {
 	position: absolute;
-	margin-top: 585px;
+	margin-top: 590px;
 	font-size: 20px;
 	font-weight: 500;
 	color: rgb(219, 93, 93);
+	@include media(computer) {
+		margin-top: 580px;
+	}
+	@include media(laptop) {
+		margin-top: 570px;
+	}
+	@include media(tablet) {
+		margin-top: 560px;
+	}
+	@include media(mobile) {
+		margin-top: 510px;
+	}
 }
