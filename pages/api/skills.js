@@ -15,7 +15,7 @@ const skills = [
         id: 5, path: 'https://cdn-icons-png.flaticon.com/512/520/520890.png', title: "React Native"
     },
     {
-        id: 6, path: 'https://cdn.icon-icons.com/icons2/2148/PNG/512/nextjs_icon_132160.png', title: "NextJS"
+        id: 6, path: 'https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png', title: "NextJS"
     },
     {
         id: 7, path: 'https://img.icons8.com/color/344/redux.png', title: "Redux"
