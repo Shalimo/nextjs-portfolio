@@ -169,55 +169,55 @@
 }
 .successMessage {
 	position: absolute;
-	margin-top: 585px;
+	margin-top: 720px;
 	font-size: 20px;
 	font-weight: 500;
 	@include media(computer) {
-		margin-top: 580px;
+		margin-top: 710px;
 	}
 	@include media(laptop) {
-		margin-top: 570px;
+		margin-top: 700px;
 	}
 	@include media(tablet) {
-		margin-top: 560px;
+		margin-top: 690px;
 	}
 	@include media(mobile) {
-		margin-top: 510px;
+		margin-top: 640px;
 	}
 }
 
 .spinner {
 	position: absolute;
-	margin-top: 590px;
+	margin-top: 720px;
 	@include media(computer) {
-		margin-top: 580px;
+		margin-top: 710px;
 	}
 	@include media(laptop) {
-		margin-top: 570px;
+		margin-top: 700px;
 	}
 	@include media(tablet) {
-		margin-top: 560px;
+		margin-top: 690px;
 	}
 	@include media(mobile) {
-		margin-top: 510px;
+		margin-top: 640px;
 	}
 }
 .noData {
 	position: absolute;
-	margin-top: 590px;
+	margin-top: 720px;
 	font-size: 20px;
 	font-weight: 500;
 	color: rgb(219, 93, 93);
 	@include media(computer) {
-		margin-top: 580px;
+		margin-top: 710px;
 	}
 	@include media(laptop) {
-		margin-top: 570px;
+		margin-top: 700px;
 	}
 	@include media(tablet) {
-		margin-top: 560px;
+		margin-top: 690px;
 	}
 	@include media(mobile) {
-		margin-top: 510px;
+		margin-top: 640px;
 	}
 }
