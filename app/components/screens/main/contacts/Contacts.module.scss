@@ -17,7 +17,7 @@
 
 .contactsContainer {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	flex-direction: row;
 	width: 100%;
 	margin-left: 20px;
@@ -36,14 +36,18 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-right: 60px;
-	@include media(laptop) {
-	}
+	padding: 60px;
+	margin-right: 60px;
 	@include media(tablet) {
 		padding-right: 5px;
+		margin-right: 60px;
+	}
+	@include media(miniTablet) {
+		padding-left: 15px;
+		margin-right: 35px;
 	}
 	@include media(mobile) {
-		padding-left: 10px;
+		padding-left: 15px;
 		margin-right: 5px;
 	}
 }
