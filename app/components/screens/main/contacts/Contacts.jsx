@@ -1,6 +1,4 @@
 import styles from './Contacts.module.scss'
-import Image from 'next/image'
-import { APP_URL } from '../../../../constants'
 import { useEmail } from '../../../../hooks/useEmail'
 import Spinner from '../../../ui/spinner/Spinner'
 import { useEffect } from 'react'
@@ -18,7 +16,7 @@ const Contacts = ({ contacts }) => {
 				{contacts
 					? contacts.map((item, i) => {
 							return (
-								<div className={styles.content}>
+								<div key={item.id} className={styles.content}>
 									<img className={styles.img} src={item.path} />
 									<p className={styles.title}>{item.title}</p>
 								</div>
