@@ -102,23 +102,23 @@
 }
 
 .projectContainer:nth-child(9)::before {
-	background: linear-gradient(-90deg, #fc3030, #e2bbbb);
-	
+	background: linear-gradient(-90deg, #fc3030, #e2bbbb);	
 }
 
 .projectContainer:nth-child(10)::before {
 	background: linear-gradient(-90deg, #f56c6c, #f1b1aa);
-	
-	
 }
 
 .projectContainer:nth-child(11)::before {
-	background: linear-gradient(-90deg, #f54076, #e2bbc7);
-	
+	background: linear-gradient(-90deg, #fd96b5, #e2bbc7);
 }
 
 .projectContainer:nth-child(12)::before {
-	background: linear-gradient(-90deg, #f540a4, #e2bbdb);
+	background: linear-gradient(-90deg, #c75e98, #e2bbdb);
+}
+
+.projectContainer:nth-child(13)::before {
+	background: linear-gradient(-90deg, #c163f8, #e2bbdb);
 }
 
 .image {
