@@ -15,14 +15,14 @@ const links = [
     id: 3,
     url: 'https://github.com/Shalimo/nextjs-portfolio',
     title: 'Portfolio',
-    description: 'React/NextJS portfolio. Used: nextjs API, RestAPI, hooks, custom hooks, tailwind, Sass Modules, mixins.',
+    description: 'React/NextJS portfolio. Used: nextjs API, RestAPI, hooks, custom hooks, tailwind, sass modules, mixins.',
     deploy: 'https://nextjs-portfolio-lovat-five.vercel.app'
   },
   {
     id: 4,
     url: 'https://github.com/Shalimo/react-redux-typescript-shop',
     title: 'Fakestore',
-    description: 'React/Redux-toolkit/TypeScript. Used: RestAPI, hooks, custom hooks, react query, tailwind, Sass Modules, persist reducers, store, types.',
+    description: 'React/Redux-toolkit/TypeScript. Used: RestAPI, hooks, custom hooks, react query, tailwind, sass modules, persist reducers, store, types.',
     deploy: 'https://react-redux-typescript-shop.vercel.app'
   },
   {
