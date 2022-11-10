@@ -23,21 +23,21 @@ const links = [
     url: 'https://github.com/Shalimo/react-redux-typescript-shop',
     title: 'Fakestore',
     description: 'React/Redux-toolkit/TypeScript. Used: RestAPI, hooks, custom hooks, react query, tailwind, Sass Modules, persist reducers, store, types.',
-    deploy: 'react-redux-typescript-shop.vercel.app'
+    deploy: 'https://react-redux-typescript-shop.vercel.app'
   },
   {
     id: 5,
     url: 'https://github.com/Shalimo/git-mini-paralect',
     title: 'Mini Github',
     description: 'Task project for Paralect. React. Working with GitHub API. Layout, responsive layout. User search. Displaying information about the user and his repositories. Used: hooks, custom hooks, RestAPI, promises, JS methods.',
-    deploy: 'git-mini-paralect.vercel.app'
+    deploy: 'https://git-mini-paralect.vercel.app'
   },
   {
     id: 6,
     url: 'https://github.com/Shalimo/remix-cryptocurrencies',
     title: 'Coincap API',
     description: 'Remix/React/Typescript. Displaying a list of cryptocurrencies and information about each cryptocurrency.',
-    deploy: 'remix-cryptocurrencies.vercel.app'
+    deploy: 'https://remix-cryptocurrencies.vercel.app'
   },
   {
     id: 7,

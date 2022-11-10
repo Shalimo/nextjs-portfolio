@@ -9,6 +9,11 @@ const ProjectsItem = ({ item }) => {
 	return (
 		<div className={styles.projectContainer}>
 			<div className={styles.projectInfo}>
+				{item.deploy ? (
+					<a target="_blank" href={item.deploy ? item.deploy : '#'}>
+						<button className={styles.deployButton}>deploy</button>
+					</a>
+				) : null}
 				<button
 					ref={ref}
 					onClick={() => {
@@ -18,6 +23,7 @@ const ProjectsItem = ({ item }) => {
 				>
 					about
 				</button>
+
 				{showItems && (
 					<div className={styles.projectInfoContainer}>
 						<p className={styles.info}>{info.title}</p>
