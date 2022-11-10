@@ -1,37 +1,28 @@
 @import './../../../../assets/styles/media';
 
 .header {
-	display: flex;
-	justify-content: flex-end;
-	position: fixed;
+	@apply flex justify-end fixed w-full h-auto p-[18px] bg-headerColor;
 	z-index: 1000;
-	width: 100%;
-	height: auto;
-	padding: 18px;
-	@apply bg-headerColor;
 	@include media(laptop) {
-		margin-right: 140px;
+		@apply mr-[140px];
 	}
 	@include media(tablet) {
-		justify-content: center;
+		@apply justify-center;
 	}
 	@include media(mobile) {
-		justify-content: center;
+		@apply justify-center;
 	}
 }
 
 .container {
-	width: 300px;
-	display: flex;
-	justify-content: space-around;
-	margin-right: 130px;
+	@apply w-[300px] flex justify-around mr-[130px];
 	@include media(laptop) {
-		margin-right: 140px;
+		@apply mr-[140px];
 	}
 	@include media(tablet) {
-		margin-right: 0px;
+		@apply mr-[0px];
 	}
 	@include media(mobile) {
-		margin-right: 0px;
+		@apply mr-[0px];
 	}
 }
