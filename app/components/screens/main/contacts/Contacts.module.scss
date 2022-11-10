@@ -1,163 +1,112 @@
 @import '../../../../assets/styles/media';
 
 .container {
-	padding-top: 80px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-bottom: 80px;
+	@apply pt-[80px] flex flex-col items-center pb-[80px];
 }
 
 .mainTitle {
-	text-align: center;
-	font-size: 40px;
-	font-weight: 600;
-	margin-bottom: 30px;
+	@apply text-center text-[40px] font-semibold mb-[30px];
 }
 
 .contactsContainer {
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	width: 100%;
-	margin-left: 20px;
+	@apply flex flex-row justify-center w-full ml-[20px];
 	@include media(laptop) {
-		margin-left: 30px;
+		@apply ml-[30px];
 	}
 	@include media(tablet) {
-		margin-right: 40px;
+		@apply mr-[35px];
 	}
 	@include media(mobile) {
-		margin-left: 30px;
+		@apply mr-[30px];
 	}
 }
 
 .content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 60px;
-	margin-right: 60px;
+	@apply flex flex-col items-center p-[60px] mr-[60px];
 	@include media(tablet) {
-		padding-right: 5px;
-		margin-right: 60px;
+		@apply pr-[5px] mr-[60px];
 	}
 	@include media(miniTablet) {
-		padding-left: 15px;
-		margin-right: 35px;
+		@apply pl-[15px] mr-[35px];
 	}
 	@include media(mobile) {
-		padding-left: 15px;
-		margin-right: 5px;
-		padding: 20px 20px;
+		@apply pl-[20px] pr-[20px] pt-[20px] pb-[20px] mr-[5px];
 	}
 }
 
 .img {
-	width: 110px;
-	height: 110px;
+	@apply w-[110px] h-[110px];
 	@include media(laptop) {
-		width: 90px;
-		height: 90px;
+		@apply w-[90px] h-[90px];
 	}
 	@include media(tablet) {
-		width: 80px;
-		height: 80px;
+		@apply w-[80px] h-[80px];
 	}
 	@include media(mobile) {
-		width: 60px;
-		height: 60px;
+		@apply w-[60px] h-[60px];
 	}
 }
 
 .title {
-	margin-top: 10px;
-	font-size: 20px;
-	font-weight: 600;
+	@apply mt-[10px] text-[20px] font-semibold;
 	@include media(laptop) {
-		font-size: 16px;
+		@apply text-[16px];
 	}
 	@include media(tablet) {
-		font-size: 14px;
+		@apply text-[14px];
 	}
 	@include media(mobile) {
-		font-size: 10px;
+		@apply text-[10px];
 	}
 }
 
 .form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 30px;
+	@apply flex flex-col items-center mt-[30px];
 }
 
 .input {
-	width: 500px;
-	height: 50px;
-	border: none;
-	border-bottom: 1px solid black;
-	margin-top: 15px;
-	font-size: 14px;
-	padding-left: 10px;
-	background-color: rgb(245, 222, 245);
+	@apply w-[500px] h-[50px] border-b-[1px] border-solid border-[#000];
+	@apply mt-[15px] text-[14px] pl-[10px] bg-[#f5def5];
 	@include media(tablet) {
-		width: 400px;
+		@apply w-[400px];
 	}
 	@include media(mobile) {
-		width: 270px;
-		height: 40px;
+		@apply w-[270px] h-[40px];
 	}
 }
 
 .textarea {
-	width: 700px;
-	margin-top: 15px;
-	font-size: 14px;
-	padding-left: 10px;
-	border: 1px solid black;
-	background-color: rgb(245, 222, 245);
+	@apply w-[700px] mt-[15px] text-[14px] pl-[10px] border-[1px] border-solid border-[#000] bg-[#f5def5];
 	@include media(tablet) {
-		width: 550px;
+		@apply w-[550px];
 	}
 	@include media(mobile) {
-		width: 350px;
+		@apply w-[350px];
 	}
 }
 
 .submitButton {
-	box-sizing: border-box;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	background-color: transparent;
-	border: 2px solid #000;
-	border-radius: 0.6em;
-	color: #000;
-	cursor: pointer;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-align-self: center;
-	-ms-flex-item-align: center;
-	align-self: center;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1;
-	margin-top: 20px;
-	padding: 0.7em 2.8em;
-	text-decoration: none;
-	text-align: center;
-	text-transform: uppercase;
+	@apply bg-transparent border-[2px] border-solid border-[#000] rounded-[0.6em];
+	@apply text-[1rem] font-semibold leading-4 uppercase;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
+	@apply mt-[20px] pt-[0.7em] pb-[0.7em] pl-[2.8em] pr-[2.8em];
+	@include media(laptop) {
+		@apply pt-[0.5em] pb-[0.5em] pl-[1.8em] pr-[1.8em];
+	}
+	@include media(tablet) {
+		@apply pt-[0.5em] pb-[0.5em] pl-[1.8em] pr-[1.8em];
+	}
+	@include media(mobile) {
+		@apply pt-[0.5em] pb-[0.5em] pl-[1.8em] pr-[1.8em];
+	}
 }
 
-.submitButton:hover,
 .submitButton:focus {
-	color: #000;
-	outline: 0;
+	@apply text-[#000] outline-0;
+}
+
+.submitButton:hover {
+	box-shadow: 0 0 40px 40px #987fb3 inset;
 }
 
 .submitButton {
@@ -165,60 +114,49 @@
 	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 
-.submitButton:hover {
-	box-shadow: 0 0 40px 40px #987fb3 inset;
-}
 .successMessage {
-	position: absolute;
-	margin-top: 720px;
-	font-size: 20px;
-	font-weight: 500;
+	@apply absolute mt-[720px] text-[20px] font-semibold;
 	@include media(computer) {
-		margin-top: 710px;
+		@apply mt-[710px];
 	}
 	@include media(laptop) {
-		margin-top: 700px;
+		@apply mt-[700px];
 	}
 	@include media(tablet) {
-		margin-top: 690px;
+		@apply mt-[690px];
 	}
 	@include media(mobile) {
-		margin-top: 560px;
+		@apply mt-[560px];
 	}
 }
 
 .spinner {
-	position: absolute;
-	margin-top: 720px;
+	@apply absolute mt-[720px];
 	@include media(computer) {
-		margin-top: 710px;
+		@apply mt-[710px];
 	}
 	@include media(laptop) {
-		margin-top: 700px;
+		@apply mt-[700px];
 	}
 	@include media(tablet) {
-		margin-top: 690px;
+		@apply mt-[690px];
 	}
 	@include media(mobile) {
-		margin-top: 560px;
+		@apply mt-[560px];
 	}
 }
 .noData {
-	position: absolute;
-	margin-top: 720px;
-	font-size: 20px;
-	font-weight: 500;
-	color: rgb(219, 93, 93);
+	@apply absolute mt-[720px] text-[20px] font-semibold text-[#db5d5d];
 	@include media(computer) {
-		margin-top: 710px;
+		@apply mt-[710px];
 	}
 	@include media(laptop) {
-		margin-top: 700px;
+		@apply mt-[700px];
 	}
 	@include media(tablet) {
-		margin-top: 690px;
+		@apply mt-[690px];
 	}
 	@include media(mobile) {
-		margin-top: 560px;
+		@apply mt-[560px];
 	}
 }
