@@ -20,6 +20,9 @@ const skills = [
     {
         id: 7, path: 'https://img.icons8.com/color/344/redux.png', title: "Redux"
     },
+    {
+        id: 8, path: 'https://cdn-icons-png.flaticon.com/512/5968/5968381.png', title: "TypeScript"
+    },
 ]
 
 export default function handler(req, res) {

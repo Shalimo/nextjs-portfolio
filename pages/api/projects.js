@@ -19,9 +19,9 @@ const links = [
   },
   {
     id: 4,
-    url: 'https://github.com/Shalimo/remix-cryptocurrencies',
-    title: 'Coincap API',
-    description: 'Remix/React/Typescript. Displaying a list of cryptocurrencies and information about each cryptocurrency.'
+    url: 'https://github.com/Shalimo/react-redux-typescript-shop',
+    title: 'Fakestore',
+    description: 'React/Redux-toolkit/TypeScript. Used: RestAPI, hooks, custom hooks, react query, tailwind, Sass Modules, persist reducers, store, types.'
   },
   {
     id: 5,
@@ -31,48 +31,54 @@ const links = [
   },
   {
     id: 6,
+    url: 'https://github.com/Shalimo/remix-cryptocurrencies',
+    title: 'Coincap API',
+    description: 'Remix/React/Typescript. Displaying a list of cryptocurrencies and information about each cryptocurrency.'
+  },
+  {
+    id: 7,
     url: 'https://github.com/Shalimo/mini-twitter',
     title: 'Mini Twitter',
     description: 'React. Twitter analogue. Adding/deleting posts, ability to like and dislike posts.'
   },
   {
-    id: 7,
+    id: 8,
     url: 'https://github.com/Shalimo/restaurant-app-react-redux',
     title: 'Pizza Store',
     description: 'React/Redux. The server is emulated using json database.'
   },
   {
-    id: 8,
+    id: 9,
     url: 'https://github.com/Shalimo/project-food',
     title: 'Food Store',
     description: 'JavaScript. Modules (tabs, modals, timer, calorie calculator, forms, cards), webpack, RestAPI, promises. The server is emulated using json database.'
   },
   {
-    id: 9,
+    id: 10,
     url: 'https://github.com/Shalimo/irvas-service',
     title: 'Hardware store',
     description: 'JavaScript. Modules, RestAPI, promises, gulp. The server is emulated using php.'
   },
   {
-    id: 10,
+    id: 11,
     url: 'https://github.com/Shalimo/got-db',
     title: 'Game of Thrones API',
     description: 'React. The universe of the game of thrones database. Working with Game of Thrones API. Used: hooks, RestAPI, promises, JS methods.'
   },
   {
-    id: 11,
+    id: 12,
     url: 'https://github.com/Shalimo/currency-converter',
     title: 'Currency converter',
     description: 'React. Working with currensy API. Used: RestAPI, promises, hooks.'
   },
   {
-    id: 12,
+    id: 13,
     url: 'https://github.com/Shalimo/booking-calendar',
     title: 'Booking calendar',
     description: 'JavaScript. Booking calendar for hotels. Test task.'
   },
   {
-    id: 13,
+    id: 14,
     url: 'https://github.com/Shalimo/react-redux-counter',
     title: 'Counter',
     description: 'My first project with React/Redux. Just a memory.'
