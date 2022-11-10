@@ -1,21 +1,14 @@
 @import '../../../../../assets/styles/media';
 
 .image {
-	width: 500px;
-	height: 500px;
-	border-radius: 10px;
-	border-radius: 2%;
-	overflow: hidden;
+	@apply w-[500px] h-[500px] rounded-[2%] overflow-hidden;
 	@include media(laptop) {
-		width: 300px;
-		height: 300px;
+		@apply w-[300px] h-[300px];
 	}
 	@include media(tablet) {
-		width: 300px;
-		height: 300px;
+		@apply w-[300px] h-[300px];
 	}
 	@include media(mobile) {
-		width: 300px;
-		height: 300px;
+		@apply w-[300px] h-[300px];
 	}
 }

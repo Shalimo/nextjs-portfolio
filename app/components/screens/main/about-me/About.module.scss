@@ -1,40 +1,31 @@
 @import '../../../../assets/styles/media';
 
 .about {
-	display: flex;
-	flex-direction: row;
-	padding-top: 165px;
-	padding-bottom: 100px;
+	@apply flex flex-row pt-[165px] pb-[100px];
 	@include media(laptop) {
-		flex-direction: column;
+		@apply flex-col;
 	}
 	@include media(tablet) {
-		flex-direction: column;
+		@apply flex-col;
 	}
 	@include media(mobile) {
-		flex-direction: column;
+		@apply flex-col;
 	}
 }
 
 .left {
-	display: flex;
-	flex: 1;
-	align-items: center;
-	justify-content: center;
+	@apply flex flex-1 items-center justify-center;
 	@include media(laptop) {
-		margin-bottom: 40px;
+		@apply mb-[40px];
 	}
 	@include media(tablet) {
-		margin-bottom: 40px;
+		@apply mb-[40px];
 	}
 	@include media(mobile) {
-		margin-bottom: 40px;
+		@apply mb-[40px];
 	}
 }
 
 .right {
-	display: flex;
-	flex: 1;
-	align-items: center;
-	justify-content: center;
+	@apply flex flex-1 items-center justify-center;
 }

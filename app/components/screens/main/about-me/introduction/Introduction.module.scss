@@ -1,83 +1,45 @@
 @import '../../../../../assets/styles/media';
 
 .intro {
-	display: flex;
-	flex-direction: column;
-	font-size: 30px;
-	font-weight: 600;
-	color: '#4F4F4F';
+	@apply flex flex-col text-[30px] font-semibold;
 	@include media(laptop) {
-		font-size: 25px;
-		text-align: center;
-		align-items: center;
+		@apply text-[25px] text-center items-center;
 	}
 	@include media(tablet) {
-		font-size: 22px;
-		text-align: center;
-		align-items: center;
+		@apply text-[22px] text-center items-center;
 	}
 	@include media(mobile) {
-		font-size: 18px;
-		text-align: center;
-		align-items: center;
+		@apply text-[20px] text-center items-center;
 	}
 }
 
 .buttons {
+	@apply flex;
 	@include media(laptop) {
-		margin-left: 25px;
+		@apply ml-[25px]
 	}
 	@include media(tablet) {
-		margin-left: 25px;
+		@apply ml-[25px]
 	}
 	@include media(mobile) {
-		margin-left: 25px;
+		@apply ml-[25px]
 	}
 }
 
 .btn {
-	box-sizing: border-box;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	background-color: transparent;
-	border: 2px solid #000;
-	border-radius: 0.6em;
-	color: #000;
-	cursor: pointer;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-align-self: center;
-	-ms-flex-item-align: center;
-	align-self: center;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1;
-	margin-right: 30px;
-	margin-top: 20px;
-	padding: 1em 2.8em;
-	text-decoration: none;
-	text-align: center;
-	text-transform: uppercase;
+	@apply bg-transparent border-[2px] border-solid border-[#000] rounded-[0.6em];
+	@apply text-[1rem] font-semibold leading-4 uppercase;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
+	@apply mr-[30px] mt-[20px] pt-[1em] pb-[1em] pl-[2.8em] pr-[2.8em];
 	@include media(laptop) {
-		padding: 0.5em 1.8em;
+		@apply pt-[0.5em] pb-[0.5em] pl-[1.8em] pr-[1.8em];
 	}
 	@include media(tablet) {
-		padding: 0.5em 1.8em;
+		@apply pt-[0.5em] pb-[0.5em] pl-[1.8em] pr-[1.8em];
 	}
 	@include media(mobile) {
-		padding: 0.5em 1.3em;
+		@apply pt-[0.5em] pb-[0.5em] pl-[1.8em] pr-[1.8em];
 	}
-}
-
-.btn:hover,
-.btn:focus {
-	color: #000;
-	outline: 0;
 }
 
 .btn {
@@ -85,42 +47,29 @@
 	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 
+.btn:focus {
+	@apply text-[#000] outline-0;
+}
+
 .btn:hover {
 	box-shadow: 0 0 40px 40px #987fb3 inset;
 }
+
 .skillsContainer {
-	height: auto;
-	width: auto;
-	position: absolute;
-	border-color: #000;
-	border-width: 1px;
-	border-radius: 10px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: 20px;
-	margin-top: 230px;
-	background-color: aliceblue;
+	@apply h-auto w-auto absolute;
+	@apply border-[#000] border-[1px] border-solid rounded-[10px];
+	@apply flex flex-row justify-center p-[20px] mt-[230px] bg-[#f0f8ff];
 	@include media(computer) {
-		width: 660px;
+		@apply w-[680px];
 	}
 	@include media(laptop) {
-		width: 350px;
-		flex-wrap: wrap;
-		padding: 30px;
-		margin-top: 200px;
+		@apply w-[350px] flex flex-wrap p-[30px] mt-[200px];
 	}
 	@include media(tablet) {
-		width: 350px;
-		flex-wrap: wrap;
-		padding: 30px;
-		margin-top: 190px;
+		@apply w-[350px] flex flex-wrap p-[30px] mt-[190px];
 	}
 	@include media(mobile) {
-		width: 350px;
-		flex-wrap: wrap;
-		padding: 30px;
-		margin-top: 170px;
+		@apply w-[350px] flex flex-wrap p-[30px] mt-[170px];
 	}
 }
 
@@ -139,24 +88,26 @@
 }
 
 .skill {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 12px 12px;
+	@apply flex flex-col items-center;
+	@apply pt-[12px] pb-[12px] pl-[12px] pr-[12px]; 
 }
 
 .skillIcon {
-	width: 65px;
-	height: 65px;
+	@apply w-[55px] h-[55px];
 	@include media(computer) {
-		width: 60px;
-		height: 60px;
+		@apply w-[45px] h-[45px];
+	}
+	@include media(laptop) {
+		@apply w-[55px] h-[55px];
+	}
+	@include media(tablet) {
+		@apply w-[55px] h-[55px];
+	}
+	@include media(mobile) {
+		@apply w-[55px] h-[55px];
 	}
 }
 
 .skillTitle {
-	font-size: 15px;
-}
-.buttons {
-	display: flex;
+	@apply text-[15px];
 }
