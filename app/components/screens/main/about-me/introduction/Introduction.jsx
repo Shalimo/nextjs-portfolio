@@ -32,7 +32,7 @@ const Introduction = ({ about, skills }) => {
 					{skills
 						? skills.map((item, i) => {
 								return (
-									<div className={styles.skill}>
+									<div key={item.id} className={styles.skill}>
 										<img
 											key={item.id}
 											src={item.path}

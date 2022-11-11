@@ -38,7 +38,7 @@
 		@apply pt-[0.5em] pb-[0.5em] pl-[1.8em] pr-[1.8em];
 	}
 	@include media(mobile) {
-		@apply pt-[0.5em] pb-[0.5em] pl-[1.8em] pr-[1.8em];
+		@apply w-auto text-[13px] pt-[0.5em] pb-[0.5em] pl-[1.8em] pr-[1.8em];
 	}
 }
 
