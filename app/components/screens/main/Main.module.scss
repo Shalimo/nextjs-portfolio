@@ -3,19 +3,14 @@
 .section {
 	@apply relative overflow-hidden;
 	.container {
-		max-width: 100%;
+		@apply max-w-full;
 	}
 }
 
 .borderContainer {
-	display: flex;
-	justify-content: center;
+	@apply flex justify-center;
 }
 
 .border {
-	height: 5px;
-	width: 80%;
-	@apply bg-purple-400;
-	opacity: 0.3;
-	border-radius: 5px;
+	@apply h-[5px] w-[80%] bg-purple-400 opacity-[0.3] rounded-[5px];
 }
