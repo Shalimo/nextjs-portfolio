@@ -10,8 +10,13 @@ const Footer = ({ social }) => {
 				{social
 					? social.map(item => {
 							return (
-								<div key={item.id} class={styles.box}>
-									<a href={item.path} target="_blank" class={styles.btn}>
+								<div key={item.id} className={styles.box}>
+									<a
+										rel="noreferrer"
+										href={item.path}
+										target="_blank"
+										className={styles.btn}
+									>
 										<span>{item.title}</span>
 									</a>
 								</div>

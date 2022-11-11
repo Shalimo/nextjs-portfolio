@@ -12,8 +12,8 @@ const Navigation = () => {
 				offset={-130}
 				duration={500}
 			>
-				<div class={styles.box}>
-					<div class={styles.btn}>
+				<div className={styles.box}>
+					<div className={styles.btn}>
 						<span>ABOUT</span>
 					</div>
 				</div>
@@ -26,8 +26,8 @@ const Navigation = () => {
 				offset={-130}
 				duration={500}
 			>
-				<div class={styles.box}>
-					<div class={styles.btn}>
+				<div className={styles.box}>
+					<div className={styles.btn}>
 						<span>PROJECTS</span>
 					</div>
 				</div>
@@ -40,8 +40,8 @@ const Navigation = () => {
 				offset={-130}
 				duration={500}
 			>
-				<div class={styles.box}>
-					<div class={styles.btn}>
+				<div className={styles.box}>
+					<div className={styles.btn}>
 						<span>CONTACTS</span>
 					</div>
 				</div>
