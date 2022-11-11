@@ -1,75 +1,52 @@
 @import '../../../../assets/styles/media';
 .container {
-	padding-top: 80px;
-	padding-bottom: 60px;
-	position: relative;
-	width: 100%;
+	@apply pt-[80px] pb-[60px] relative w-full flex flex-col items-center;
 	z-index: 3;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 .titles {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@apply flex flex-col items-center;
 }
 
 .title {
-	font-size: 40px;
-	font-weight: 600;
+	@apply text-[40px] font-semibold;
 }
 
 .subtitle {
-	font-size: 20px;
-	font-weight: 600;
+	@apply text-[20px] font-semibold;
 }
 
 .portfolioContainer {
-	display: flex;
-	justify-content: center;
+	@apply flex justify-center;
 }
 
 .projectsContainer {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	justify-items: center;
+	@apply grid grid-cols-4 justify-items-center;
 	@include media(laptop) {
-		grid-template-columns: 1fr 1fr 1fr;
+		@apply grid grid-cols-3;
 	}
 	@include media(tablet) {
-		grid-template-columns: 1fr 1fr;
+		@apply grid grid-cols-2;
 	}
 	@include media(mobile) {
-		grid-template-columns: 1fr;
+		@apply grid grid-cols-1;
 	}
 }
 
 .projectContainer {
-	width: 250px;
-	height: 350px;
-	border: 1px solid #000;
-	border-radius: 10px;
-	margin: 40px;
-	position: relative;
-	overflow: hidden;
+	@apply w-[250px] h-[350px] border-[1px] border-solid border-[#000] rounded-[10px] m-[40px] relative overflow-hidden;
 }
 
 .projectContainer {
-	background: rgb(247, 245, 245);
+	@apply bg-[#f7f5f5];
 }
 
 .projectContainer::before {
 	content: '';
-	position: absolute;
-	height: 350px;
-	width: 250px;
-	border-radius: 50px;
+	@apply absolute h-[350px] w-[250px] rounded-[50px];
 	transform: rotate(45deg);
 	background: linear-gradient(-90deg, #987fb3, #cebbe2);
-	top: -55%;
-	left: 45%;
+	@apply top-[-55%] left-[45%];
 	z-index: 100;
 }
 
@@ -122,115 +99,56 @@
 }
 
 .image {
-	opacity: 0.5;
-	border-radius: 10px;
-	position: relative;
-	width: 1000;
-	height: 1405;
+	@apply opacity-[0.5] rounded-[10px] relative w-[1000] h-[1405];
 }
 
 .projectInfo {
-	width: 250px;
-	height: 350px;
-	position: relative;
+	@apply w-[250px] h-[350px] relative;
 	z-index: 1000;
 	margin: 96% 0 -241% 17px;
 }
 
 .projectName {
-	font-size: 20px;
-	font-weight: 600;
+	@apply text-[20px] font-semibold;
 }
 
 .projectButton {
-	box-sizing: border-box;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	background-color: transparent;
-	border: 2px solid #000;
-	border-radius: 0.6em;
-	color: #000;
-	cursor: pointer;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-align-self: center;
-	-ms-flex-item-align: center;
-	align-self: center;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1;
-	margin-top: 20px;
-	padding: 0.7em 2.8em;
-	text-decoration: none;
-	text-align: center;
-	text-transform: uppercase;
+	@apply bg-transparent border-[2px] border-solid border-[#000] rounded-[0.6em];
+	@apply text-[1rem] font-semibold leading-4 uppercase;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
+	@apply mt-[20px] pt-[0.7em] pb-[0.7em] pl-[2.8em] pr-[2.8em];
+	font-family: 'Montserrat', sans-serif;
 }
 
-.projectButton:hover,
 .projectButton:focus {
 	color: #000;
 	outline: 0;
-}
-
-.projectButton {
-	-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 .projectButton:hover {
 	box-shadow: 0 0 40px 40px #987fb3 inset;
 }
 
-.privateProject {
-	width: 150px;
-	@apply bg-headerColor;
-	border: 2px solid #000;
-	border-radius: 0.6em;
-	color: #000;
-	margin-top: 20px;
-	padding: 0.5em 2.6em;
-	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-}
-.infoButton {
-	position: absolute;
-	margin-top: -220px;
-	margin-left: 170px;
-	box-sizing: border-box;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	background-color: #fafafa;
-	border: 1px solid #000;
-	border-radius: 0.6em;
-	color: #000;
-	cursor: pointer;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-align-self: center;
-	-ms-flex-item-align: center;
-	align-self: center;
-	font-weight: 400;
-	padding: 0.4em 0.5em;
-	text-decoration: none;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	font-size: 10px;
+.projectButton {
 	-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 
-.infoButton:hover,
+.privateProject {
+	@apply w-[150px] bg-headerColor border-[2px] border-solid border-[#000] rounded-[0.6em];
+	@apply mt-[20px] pt-[0.5em] pb-[0.5em] pl-[2.6em] pr-[2.6em] uppercase font-semibold;
+	font-family: 'Montserrat', sans-serif;
+}
+.infoButton {
+	@apply absolute mt-[-220px] ml-[170px] bg-[#fafafa];
+	box-sizing: border-box;
+	@apply border-[1px] border-solid border-[#000] rounded-[0.6em];
+	@apply pt-[0.4em] pb-[0.4em] pl-[0.5em] pr-[0.5em] text-center uppercase font-semibold text-[10px];
+	font-family: 'Montserrat', sans-serif;
+	-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
 .infoButton:focus {
 	color: #000;
 	outline: 0;
@@ -241,39 +159,15 @@
 }
 
 .deployButton {
-	position: absolute;
-	margin-top: -220px;
-	margin-left: 170px;
+	@apply absolute mt-[-220px] ml-[170px] bg-[#fafafa];
 	box-sizing: border-box;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	background-color: #fafafa;
-	border: 1px solid #000;
-	border-radius: 0.6em;
-	color: #000;
-	cursor: pointer;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-align-self: center;
-	-ms-flex-item-align: center;
-	align-self: center;
-	font-weight: 400;
-	padding: 0.4em 0.5em;
-	text-decoration: none;
-	text-align: center;
-	text-transform: uppercase;
+	@apply border-[1px] border-solid border-[#000] rounded-[0.6em];
+	@apply ml-[110px] pt-[0.4em] pb-[0.4em] pl-[0.5em] pr-[0.5em] text-center uppercase font-semibold text-[10px];
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	font-size: 10px;
 	-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-	margin-left: 110px;
 }
 
-.deployButton:hover,
 .deployButton:focus {
 	color: #000;
 	outline: 0;
@@ -284,18 +178,11 @@
 }
 
 .projectInfoContainer {
-	position: absolute;
-	width: 230px;
-	height: auto;
-	background-color: #cfc6da;
-	padding: 12px;
+	@apply absolute w-[230px] h-auto bg-[#cfc6da] p-[12px] mt-[-190px] ml-[-10px];
 	z-index: 1000;
-	margin-top: -190px;
-	margin-left: -10px;
-	border: 1px solid #000;
-	border-radius: 0.6em;
+	@apply border-[1px] border-solid border-[#000] rounded-[0.6em];
 }
 
 .info {
-	font-size: 12px;
+	@apply text-[12px];
 }
