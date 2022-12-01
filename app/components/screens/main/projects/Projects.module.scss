@@ -95,8 +95,13 @@
 }
 
 .projectContainer:nth-child(13)::before {
-	background: linear-gradient(-90deg, #c163f8, #e2bbdb);
+	background: linear-gradient(-90deg, #b765e7, #b456c7);
 }
+
+.projectContainer:nth-child(14)::before {
+	background: linear-gradient(-90deg, #c163f8, #ebb3e0);
+}
+
 
 .image {
 	@apply opacity-[0.5] rounded-[10px] relative w-[1000] h-[1405];
