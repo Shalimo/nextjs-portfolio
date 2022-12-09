@@ -14,15 +14,15 @@
 }
 
 .left {
-	@apply flex flex-1 items-center justify-center;
+	@apply flex flex-1 items-center justify-center ml-10;
 	@include media(laptop) {
-		@apply mb-[40px];
+		@apply mb-[40px] ml-0;
 	}
 	@include media(tablet) {
-		@apply mb-[40px];
+		@apply mb-[40px] ml-0;
 	}
 	@include media(mobile) {
-		@apply mb-[40px];
+		@apply mb-[40px] ml-0;
 	}
 }
 

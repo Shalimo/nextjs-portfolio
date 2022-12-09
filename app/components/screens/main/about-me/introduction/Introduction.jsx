@@ -1,9 +1,5 @@
 import parse from 'html-react-parser'
 import { useShowSkills } from '../../../../../hooks/useShowSkills'
-import Image from 'next/image'
-import { APP_URL } from '../../../../../constants'
-import { APP_CV } from '../../../../../constants'
-
 import styles from './Introduction.module.scss'
 
 const Introduction = ({ about, skills }) => {
