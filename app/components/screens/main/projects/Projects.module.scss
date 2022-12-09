@@ -75,30 +75,34 @@
 }
 
 .projectContainer:nth-child(8)::before {
-	background: linear-gradient(-90deg, #f56a40, #e2d0bb);
+	background: linear-gradient(-90deg, #e68e53, #e2bbbb);	
 }
 
 .projectContainer:nth-child(9)::before {
-	background: linear-gradient(-90deg, #fc3030, #e2bbbb);	
+	background: linear-gradient(-90deg, #e9581e, #e2d0bb);
 }
 
 .projectContainer:nth-child(10)::before {
-	background: linear-gradient(-90deg, #f56c6c, #f1b1aa);
+	background: linear-gradient(-90deg, #fc3030, #e2bbbb);	
 }
 
 .projectContainer:nth-child(11)::before {
-	background: linear-gradient(-90deg, #fd96b5, #e2bbc7);
+	background: linear-gradient(-90deg, #f56c6c, #f1b1aa);
 }
 
 .projectContainer:nth-child(12)::before {
-	background: linear-gradient(-90deg, #c75e98, #e2bbdb);
+	background: linear-gradient(-90deg, #fd96b5, #e2bbc7);
 }
 
 .projectContainer:nth-child(13)::before {
-	background: linear-gradient(-90deg, #b765e7, #b456c7);
+	background: linear-gradient(-90deg, #c75e98, #e2bbdb);
 }
 
 .projectContainer:nth-child(14)::before {
+	background: linear-gradient(-90deg, #b765e7, #b456c7);
+}
+
+.projectContainer:nth-child(15)::before {
 	background: linear-gradient(-90deg, #c163f8, #ebb3e0);
 }
 

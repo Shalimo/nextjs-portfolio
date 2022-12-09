@@ -10,7 +10,11 @@ const ProjectsItem = ({ item }) => {
 		<div className={styles.projectContainer}>
 			<div className={styles.projectInfo}>
 				{item.deploy ? (
-					<a target="_blank" href={item.deploy ? item.deploy : '#'}>
+					<a
+						target="_blank"
+						href={item.deploy ? item.deploy : '#'}
+						rel="noreferrer"
+					>
 						<button className={styles.deployButton}>deploy</button>
 					</a>
 				) : null}
@@ -31,7 +35,7 @@ const ProjectsItem = ({ item }) => {
 				)}
 				<p className={styles.projectName}>{item.title}</p>
 				{item.url ? (
-					<a target="_blank" href={item.url ? item.url : '#'}>
+					<a target="_blank" href={item.url ? item.url : '#'} rel="noreferrer">
 						<button className={styles.projectButton}>Code</button>
 					</a>
 				) : (
