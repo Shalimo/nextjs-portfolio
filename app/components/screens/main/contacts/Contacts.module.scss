@@ -5,7 +5,7 @@
 }
 
 .mainTitle {
-	@apply text-center text-[40px] font-semibold mb-[30px];
+	@apply text-center text-[40px] font-semibold mb-[30px] text-cyan-50;
 }
 
 .contactsContainer {
@@ -35,7 +35,7 @@
 }
 
 .img {
-	@apply w-[110px] h-[110px];
+	@apply w-[110px] h-[110px] opacity-80;
 	@include media(laptop) {
 		@apply w-[90px] h-[90px];
 	}
@@ -48,7 +48,7 @@
 }
 
 .title {
-	@apply mt-[10px] text-[20px] font-semibold;
+	@apply mt-[10px] text-[20px] font-semibold text-cyan-50;
 	@include media(laptop) {
 		@apply text-[16px];
 	}
@@ -61,12 +61,12 @@
 }
 
 .form {
-	@apply flex flex-col items-center mt-[30px];
+	@apply flex flex-col items-center mt-[30px] opacity-80;
 }
 
 .input {
 	@apply w-[500px] h-[50px] border-b-[1px] border-solid border-[#000];
-	@apply mt-[15px] text-[14px] pl-[10px] bg-[#f5def5];
+	@apply mt-[15px] text-[14px] pl-[10px] bg-cyan-50;
 	@include media(tablet) {
 		@apply w-[400px];
 	}
@@ -76,7 +76,7 @@
 }
 
 .textarea {
-	@apply w-[700px] mt-[15px] text-[14px] pl-[10px] border-[1px] border-solid border-[#000] bg-[#f5def5];
+	@apply w-[700px] mt-[15px] text-[14px] pl-[10px] border-[1px] border-solid border-[#000] bg-cyan-50;
 	@include media(tablet) {
 		@apply w-[550px];
 	}
@@ -86,8 +86,8 @@
 }
 
 .submitButton {
-	@apply bg-transparent border-[2px] border-solid border-[#000] rounded-[0.6em];
-	@apply text-[1rem] font-semibold leading-4 uppercase;
+	@apply bg-transparent border-[2px] border-solid border-cyan-50 rounded-[0.6em];
+	@apply text-[1rem] font-semibold leading-4 uppercase text-cyan-50;
 	font-family: 'Montserrat', sans-serif;
 	@apply mt-[20px] pt-[0.7em] pb-[0.7em] pl-[2.8em] pr-[2.8em];
 	@include media(laptop) {
@@ -102,11 +102,11 @@
 }
 
 .submitButton:focus {
-	@apply text-[#000] outline-0;
+	@apply text-cyan-50 outline-0;
 }
 
 .submitButton:hover {
-	box-shadow: 0 0 40px 40px #987fb3 inset;
+	box-shadow: 0 0 40px 40px #5D57B1 inset;
 }
 
 .submitButton {

@@ -1,7 +1,7 @@
 @import './../../../../assets/styles/media';
 
 .header {
-	@apply flex justify-end fixed w-full h-auto p-[18px] bg-headerColor;
+	@apply flex justify-end fixed w-full h-auto p-[18px] bg-[#000000];
 	z-index: 1000;
 	@include media(laptop) {
 		@apply mr-[140px];

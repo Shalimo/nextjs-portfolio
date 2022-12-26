@@ -3,12 +3,13 @@
 }
 
 .btn {
-	@apply text-[#000] relative text-[15px];
+	@apply relative text-[15px];
 	transition: all 0.3s;
 }
 
 .btn span {
 	transition: all 0.3s;
+	@apply text-cyan-50;
 }
 
 .btn::before {
@@ -16,7 +17,7 @@
 	@apply absolute bottom-0 left-0 w-full h-full opacity-0;
 	z-index: 1;
 	transition: all 0.3s;
-	@apply border-t-[1px] border-b-[1px] border-solid border-t-[#000] border-b-[#000];
+	@apply border-t-[1px] border-b-[1px] border-solid border-t-cyan-50 border-b-cyan-50;
 	transform: scale(0.1, 1);
 }
 
@@ -41,7 +42,8 @@
 	transform: scale(0.1, 1);
 }
 
-.active {
+.active span {
 	letter-spacing: 2px;
 	font-weight: 600;
+	@apply text-[#a4a0e2];
 }

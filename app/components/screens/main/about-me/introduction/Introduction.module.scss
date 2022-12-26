@@ -1,7 +1,7 @@
 @import '../../../../../assets/styles/media';
 
 .intro {
-	@apply flex flex-col text-[30px] font-semibold;
+	@apply flex flex-col text-[30px] font-semibold text-cyan-50;
 	@include media(laptop) {
 		@apply text-[25px] text-center items-center;
 	}
@@ -27,8 +27,8 @@
 }
 
 .btn {
-	@apply bg-transparent border-[2px] border-solid border-[#000] rounded-[0.6em];
-	@apply text-[1rem] font-semibold leading-4 uppercase;
+	@apply bg-transparent border-[2px] border-solid border-cyan-50 rounded-[0.6em];
+	@apply text-[1rem] font-semibold leading-4 uppercase text-cyan-50;
 	font-family: 'Montserrat', sans-serif;
 	@apply mr-[30px] mt-[20px] pt-[1em] pb-[1em] pl-[2.8em] pr-[2.8em];
 	@include media(laptop) {
@@ -48,15 +48,15 @@
 }
 
 .btn:focus {
-	@apply text-[#000] outline-0;
+	@apply outline-0;
 }
 
 .btn:hover {
-	box-shadow: 0 0 40px 40px #987fb3 inset;
+	box-shadow: 0 0 40px 40px #5D57B1 inset;
 }
 
 .skillsContainer {
-	@apply h-auto w-auto absolute;
+	@apply h-auto w-auto absolute opacity-80;
 	@apply border-[#000] border-[1px] border-solid rounded-[10px];
 	@apply flex flex-row justify-center p-[20px] mt-[230px] bg-[#f0f8ff];
 	@include media(computer) {
@@ -109,5 +109,5 @@
 }
 
 .skillTitle {
-	@apply text-[15px];
+	@apply text-[15px] text-zinc-900;
 }

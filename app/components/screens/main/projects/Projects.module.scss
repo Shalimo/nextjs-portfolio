@@ -5,7 +5,7 @@
 }
 
 .titles {
-	@apply flex flex-col items-center;
+	@apply flex flex-col items-center text-cyan-50;
 }
 
 .title {
@@ -34,78 +34,21 @@
 }
 
 .projectContainer {
-	@apply w-[250px] h-[350px] border-[1px] border-solid border-[#000] rounded-[10px] m-[40px] relative overflow-hidden;
+	@apply w-[250px] h-[350px] border-[1px] border-solid border-[#000] rounded-[10px] m-[40px] relative overflow-hidden opacity-80;
 }
 
 .projectContainer {
-	@apply bg-[#f7f5f5];
+	@apply bg-[#f7f5f5] opacity-70;
 }
 
 .projectContainer::before {
 	content: '';
 	@apply absolute h-[350px] w-[250px] rounded-[50px];
 	transform: rotate(45deg);
-	background: linear-gradient(-90deg, #987fb3, #cebbe2);
+	background: linear-gradient(-90deg, #000000, #5D57B1);
 	@apply top-[-55%] left-[45%];
 	z-index: 100;
 }
-
-.projectContainer:nth-child(2)::before {
-	background: linear-gradient(-90deg, #404cf5, #bbbbe2);
-}
-
-.projectContainer:nth-child(3)::before {
-	background: linear-gradient(-90deg, #40bcf5, #bbcce2);
-}
-
-.projectContainer:nth-child(4)::before {
-	background: linear-gradient(-90deg, #40f59b, #bbe2df);
-}
-
-.projectContainer:nth-child(5)::before {
-	background: linear-gradient(-90deg, #40f549, #c6e2bb);
-}
-
-.projectContainer:nth-child(6)::before {
-	background: linear-gradient(-90deg, #e3f540, #dbe2bb);
-}
-
-.projectContainer:nth-child(7)::before {
-	background: linear-gradient(-90deg, #f5ad40, #e2dfbb);
-}
-
-.projectContainer:nth-child(8)::before {
-	background: linear-gradient(-90deg, #e68e53, #e2bbbb);	
-}
-
-.projectContainer:nth-child(9)::before {
-	background: linear-gradient(-90deg, #e9581e, #e2d0bb);
-}
-
-.projectContainer:nth-child(10)::before {
-	background: linear-gradient(-90deg, #fc3030, #e2bbbb);	
-}
-
-.projectContainer:nth-child(11)::before {
-	background: linear-gradient(-90deg, #f56c6c, #f1b1aa);
-}
-
-.projectContainer:nth-child(12)::before {
-	background: linear-gradient(-90deg, #fd96b5, #e2bbc7);
-}
-
-.projectContainer:nth-child(13)::before {
-	background: linear-gradient(-90deg, #c75e98, #e2bbdb);
-}
-
-.projectContainer:nth-child(14)::before {
-	background: linear-gradient(-90deg, #b765e7, #b456c7);
-}
-
-.projectContainer:nth-child(15)::before {
-	background: linear-gradient(-90deg, #c163f8, #ebb3e0);
-}
-
 
 .image {
 	@apply opacity-[0.5] rounded-[10px] relative w-[1000] h-[1405];
@@ -135,7 +78,8 @@
 }
 
 .projectButton:hover {
-	box-shadow: 0 0 40px 40px #987fb3 inset;
+	box-shadow: 0 0 40px 40px #5D57B1 inset;
+	@apply text-cyan-50;
 }
 
 .projectButton {
@@ -144,12 +88,12 @@
 }
 
 .privateProject {
-	@apply w-[150px] bg-headerColor border-[2px] border-solid border-[#000] rounded-[0.6em];
+	@apply w-[150px] bg-[#9092e4] border-[2px] border-solid border-[#000] rounded-[0.6em];
 	@apply mt-[20px] pt-[0.5em] pb-[0.5em] pl-[2.6em] pr-[2.6em] uppercase font-semibold;
 	font-family: 'Montserrat', sans-serif;
 }
 .infoButton {
-	@apply absolute mt-[-220px] ml-[170px] bg-[#fafafa];
+	@apply absolute mt-[-220px] ml-[170px] bg-cyan-50;
 	box-sizing: border-box;
 	@apply border-[1px] border-solid border-[#000] rounded-[0.6em];
 	@apply pt-[0.4em] pb-[0.4em] pl-[0.5em] pr-[0.5em] text-center uppercase font-semibold text-[10px];
@@ -164,11 +108,12 @@
 }
 
 .infoButton:hover {
-	box-shadow: 0 0 40px 40px #cfc6da inset;
+	box-shadow: 0 0 40px 40px #5D57B1 inset;
+	@apply text-cyan-50;
 }
 
 .deployButton {
-	@apply absolute mt-[-220px] ml-[170px] bg-[#f1e2d8];
+	@apply absolute mt-[-220px] ml-[170px] bg-cyan-50;
 	box-sizing: border-box;
 	@apply border-[1px] border-solid border-[#000] rounded-[0.6em];
 	@apply ml-[110px] pt-[0.4em] pb-[0.4em] pl-[0.5em] pr-[0.5em] text-center uppercase font-semibold text-[10px];
@@ -183,13 +128,14 @@
 }
 
 .deployButton:hover {
-	box-shadow: 0 0 40px 40px #cfc6da inset;
+	box-shadow: 0 0 40px 40px #5D57B1 inset;
+	@apply text-cyan-50;
 }
 
 .projectInfoContainer {
-	@apply absolute w-[230px] h-auto bg-[#cfc6da] p-[12px] mt-[-190px] ml-[-10px];
+	@apply absolute w-[230px] h-auto bg-slate-800 p-[12px] mt-[-190px] ml-[-10px];
 	z-index: 1000;
-	@apply border-[1px] border-solid border-[#000] rounded-[0.6em];
+	@apply border-[1px] border-solid border-[#000] rounded-[0.6em] text-cyan-50;
 }
 
 .info {

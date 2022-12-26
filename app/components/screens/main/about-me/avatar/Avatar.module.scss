@@ -1,7 +1,7 @@
 @import '../../../../../assets/styles/media';
 
 .image {
-	@apply w-[500px] h-[500px] overflow-hidden rounded-tr-[4%] rounded-bl-[4%] rounded-tl-[4%] rounded-br-[4%];
+	@apply w-[500px] h-[500px] overflow-hidden rounded-tr-[4%] rounded-bl-[4%] rounded-tl-[4%] rounded-br-[4%] opacity-[85%];
 	@include media(laptop) {
 		@apply w-[300px] h-[300px];
 	}
