@@ -5,6 +5,14 @@
 	.container {
 		@apply max-w-full;
 	}
+	animation: scroll 400s linear infinite;
+    background-image: url('https://mobimg.b-cdn.net/v3/fetch/cc/cc7b0dd8597c8bf85417a376c98fce3d.jpeg?h=900&r=0.5');
+
+	@keyframes scroll {
+		100% {
+			background-position:0px 3000px;
+		}	
+	 }
 }
 
 .borderContainer {
