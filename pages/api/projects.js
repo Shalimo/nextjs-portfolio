@@ -51,7 +51,7 @@ const links = [
     url: 'https://github.com/Shalimo/trello-clone.git',
     title: 'Trello Clone',
     description: 'React/Redux-toolkit. Used: hooks, custom hooks, tailwind, sass modules.',
-    deploy: 'https://trello-clone-shalimo.vercel.app/'
+    deploy: 'https://trello-clone-shalimo.vercel.app'
   },
   {
     id: 9,
