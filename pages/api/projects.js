@@ -16,7 +16,7 @@ const links = [
     url: 'https://github.com/Shalimo/nextjs-typescript-taxi-app',
     title: 'Taxi App',
     description: 'React/NextJS/TypeScript/Redux-toolkit.. Used: Google Maps Api, hooks, custom hooks, tailwind, sass modules, mixins, store, types.',
-    deploy: 'https://nextjs-typescript-taxi-app.vercel.app/'
+    deploy: 'https://nextjs-typescript-taxi-app.vercel.app'
   },
   {
     id: 4,
