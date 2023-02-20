@@ -1,0 +1,45 @@
+.container {
+	@apply pt-[80px] pb-[80px] relative w-full flex flex-col items-center;
+	z-index: 3;
+    @apply text-stone-50;
+
+    p {
+        @apply text-[40px] font-semibold;
+    }
+      
+      .image {
+        border-radius: 10px;
+      }
+      
+      .rightArrow {
+        font-size: 3rem;
+        color: #000;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+        margin-left: 20px;
+      }
+      
+      .leftArrow{
+        font-size: 3rem;
+        color: #000;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+        margin-right: 20px;
+      }
+      
+      .slide {
+        opacity: 0;
+        transition-duration: 1s ease;
+      }
+      
+      .slide.active {
+        opacity: 1;
+        transition-duration: 1s;
+        transform: scale(1.08);
+      }
+
+}
+
+

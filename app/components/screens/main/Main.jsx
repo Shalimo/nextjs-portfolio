@@ -6,14 +6,19 @@ import Contacts from './contacts/Contacts'
 import Footer from './footer/Footer'
 
 import styles from './Main.module.scss'
+import Certificates from './certificates/Certificates'
 
-const Main = ({ projects, skills, about, contacts, social }) => {
+const Main = ({ projects, skills, about, contacts, social, certificates }) => {
 	return (
 		<section className={styles.section}>
 			<MetaTitle title={'Portfolio'} />
 			<div className={styles.container}>
 				<Header />
 				<About skills={skills} about={about} />
+				<div className={styles.borderContainer}>
+					<div className={styles.border}></div>
+				</div>
+				<Certificates certificates={certificates} />
 				<div className={styles.borderContainer}>
 					<div className={styles.border}></div>
 				</div>

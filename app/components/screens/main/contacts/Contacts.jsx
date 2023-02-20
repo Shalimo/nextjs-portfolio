@@ -4,6 +4,7 @@ import Spinner from '../../../ui/spinner/Spinner'
 import { useEffect } from 'react'
 
 const Contacts = ({ contacts }) => {
+	// console.log(contacts)
 	const { done, loading, sendData, formRef, error } = useEmail()
 	useEffect(() => {
 		console.log(formRef)
