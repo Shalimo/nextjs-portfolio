@@ -12,7 +12,7 @@ const About = ({ skills, about }) => {
 				/>
 			</div>
 			<div className={styles.right}>
-				<Avatar about={about} />
+				<Avatar about={about && about} />
 			</div>
 		</about>
 	)

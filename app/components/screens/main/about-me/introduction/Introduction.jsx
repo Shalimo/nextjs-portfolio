@@ -19,7 +19,7 @@ const Introduction = ({ about, skills }) => {
 					My skills
 				</button>
 
-				<a target="_blank" href={about.cv}>
+				<a target="_blank" href={about?.cv}>
 					<button className={styles.btn}>Download CV</button>
 				</a>
 			</div>
