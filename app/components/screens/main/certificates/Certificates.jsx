@@ -47,7 +47,7 @@ const Certificates = ({ certificates }) => {
 							{i === current && (
 								<Image
 									key={item.img}
-									src={item.img}
+									src={item?.img?.src}
 									alt="not found"
 									width={600}
 									height={450}
