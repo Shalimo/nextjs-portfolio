@@ -56,22 +56,6 @@ const Certificates = ({ certificates }) => {
 									className={styles.image}
 								/>
 							)}
-							<Image
-								key={1}
-								src={ReactCert}
-								alt="not found"
-								width={600}
-								height={450}
-								className={styles.image}
-							/>
-							<Image
-								key={5}
-								src={MvpCert}
-								alt="not found"
-								width={600}
-								height={450}
-								className={styles.image}
-							/>
 						</div>
 					))}
 				<FaArrowAltCircleRight
