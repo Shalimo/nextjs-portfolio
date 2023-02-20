@@ -7,7 +7,7 @@ const Introduction = ({ about, skills }) => {
 
 	return (
 		<div className={styles.intro}>
-			{about.introduction && parse(about.introduction)}
+			{about?.introduction && parse(about?.introduction)}
 			<div className={styles.buttons}>
 				<button
 					ref={ref}
