@@ -4,6 +4,7 @@ import { useState } from 'react'
 import styles from './Certificates.module.scss'
 import { useChangeCertificate } from '../../../../hooks/useChangeCertificate'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
+import ReactCert from '../../../../../public/ReactCertificate.jpg'
 
 const Certificates = ({ certificates }) => {
 	// const { prevImgIndex, nextImgIndex, activeIndex } =
@@ -54,6 +55,14 @@ const Certificates = ({ certificates }) => {
 									className={styles.image}
 								/>
 							)}
+							<Image
+								key={1}
+								src={ReactCert}
+								alt="not found"
+								width={600}
+								height={450}
+								className={styles.image}
+							/>
 						</div>
 					))}
 				<FaArrowAltCircleRight
