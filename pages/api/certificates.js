@@ -1,5 +1,3 @@
-import ReactCertificate from '../../app/assets/img/ReactCertificate.jpg'
-import MvpCertificate from '../../app/assets/img/MvpCertificate.jpg'
 import ReactCert2 from '/public/ReactCertificate.jpg'
 import MvpCert2 from '/public/MvpCertificate.jpg'
 
