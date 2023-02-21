@@ -1,25 +1,21 @@
-import ReactCertificate from 'public/images/ReactCertificate.jpg';
-import MvpCertificate from 'public/images/MvpCertificate.jpg';
-import CssCertificate from 'public/images/CssCertificate.jpg';
-
 const certificates = [
     {
         id: 1,
         title: '3-month internship',
         subtitle: 'React, React Native',
-        img: MvpCertificate
+        img: 'https://i.ibb.co/3k0FBt2/Mvp-Certificate.jpg'
     },
     {
         id: 2,
         title: 'The Complete ReactJS Course',
         subtitle: 'React',
-        img: ReactCertificate
+        img: 'https://i.ibb.co/4mS624D/React-Certificate.jpg'
     },
     {
         id: 3,
         title: 'CSS Layout Course',
         subtitle: 'CSS, SASS, BEM, Tailwind, Figma',
-        img: CssCertificate
+        img: 'https://i.ibb.co/PgrrLTV/Css-Certificate.jpg'
     }
 ]
 
