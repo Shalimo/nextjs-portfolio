@@ -1,6 +1,6 @@
-import ReactCertificate from '../../public/ReactCertificate.jpg'
-import MvpCertificate from '../../public/MvpCertificate.jpg'
-import CssCertificate from '../../public/CssCertificate.jpg'
+import ReactCertificate from '/public/images/ReactCertificate.jpg';
+import MvpCertificate from '/public/images/MvpCertificate.jpg';
+import CssCertificate from '/public/images/CssCertificate.jpg';
 
 const certificates = [
     {
