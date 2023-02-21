@@ -138,6 +138,20 @@
 	@apply border-[1px] border-solid border-[#000] rounded-[0.6em] text-cyan-50;
 }
 
+.projectInfoContainer {
+	animation-duration: 1s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+	0% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 .info {
 	@apply text-[12px];
 }

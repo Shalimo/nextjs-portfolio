@@ -1,18 +1,26 @@
 import ReactCertificate from '../../public/ReactCertificate.jpg'
 import MvpCertificate from '../../public/MvpCertificate.jpg'
-
-// const img1 = ReactCertificate.src;
-// const img2 = MvpCertificate.src;
+import CssCertificate from '../../public/CssCertificate.jpg'
 
 const certificates = [
     {
         id: 1,
-        img: ReactCertificate
+        title: '3-month internship',
+        subtitle: 'React, React Native',
+        img: MvpCertificate
     },
     {
         id: 2,
-        img: MvpCertificate
+        title: 'The Complete ReactJS Course',
+        subtitle: 'React',
+        img: ReactCertificate
     },
+    {
+        id: 3,
+        title: 'CSS Layout Course',
+        subtitle: 'CSS, SASS, BEM, Tailwind, Figma',
+        img: CssCertificate
+    }
 ]
 
 export default function handler(req, res) {

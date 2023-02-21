@@ -1,3 +1,5 @@
+@import '../../../../assets/styles/media';
+
 .container {
 	@apply pt-[80px] pb-[80px] relative w-full flex flex-col items-center;
 	z-index: 3;
@@ -8,38 +10,80 @@
     }
       
       .image {
-        border-radius: 10px;
+        @apply rounded-2xl;
       }
       
       .rightArrow {
-        font-size: 3rem;
-        color: #000;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
-        margin-left: 20px;
+        @apply text-[3rem] z-10 cursor-pointer;
+        margin: 0 20px 70px 20px;
       }
       
       .leftArrow{
-        font-size: 3rem;
-        color: #000;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
-        margin-right: 20px;
+        @apply text-[3rem] z-10 cursor-pointer;
+        margin: 0 20px 70px 20px;
+      }
+
+      .certificatesContainer {
+        animation-duration: 1s;
+	      animation-name: slidein; 
+      }
+
+      @keyframes slidein {
+        0% {
+          transform: scale(0.99);
+        }
+        100% {
+          transform: scale(1);
+        }
       }
       
       .slide {
-        opacity: 0;
-        transition-duration: 1s ease;
+        @apply opacity-0;
       }
       
       .slide.active {
-        opacity: 1;
-        transition-duration: 1s;
-        transform: scale(1.08);
+        @apply opacity-100;
       }
 
+      .title {
+        @apply text-2xl font-bold mb-2 mt-2;
+        @include media(mobile) {
+          @apply text-lg;
+        }
+      }
+
+      .subtitle {
+        @apply text-base font-bold;
+        @include media(mobile) {
+          @apply text-sm;
+        }
+      }
+
+      .pagination {
+        @apply flex justify-center mt-[16px];
+
+        .activePage {
+          @apply bg-[#5D57B1] text-white text-sm rounded-xl w-[30px] h-[30px] flex justify-center items-center;
+          margin: 0 5px;
+        }
+        
+        .nonActivePage {
+          @apply bg-[#F4F4F4] text-black text-sm  rounded-xl w-[30px] h-[30px] flex justify-center items-center;
+          margin: 0 5px;
+        }
+        
+        button {
+          @apply border-none bg-transparent text-black text-[16px] cursor-pointer outline-none;
+          margin: 0 8px;
+          transition: color 0.3s ease;
+          @apply text-lg font-bold;
+          
+          &:hover {
+            @apply bg-[#48459e];
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          }
+        }
+      }
 }
 
 

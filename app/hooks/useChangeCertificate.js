@@ -1,29 +1,56 @@
 import { useState, useEffect } from "react";
 
-export const useChangeCertificate = (certificate) => {
-    // Индекс текущего слайда
-const [activeIndex, setActiveIndex] = useState(0);
- 
-// Хук Effect
-useEffect(() => {
-    // Запускаем интервал
-    const interval = setInterval(() => {
-        // Меняем состояние
-        setActiveIndex((current) => {
-            // Вычисляем индекс следующего слайда, который должен вывестись
-            const res = current === certificate.length - 1 ? 0 : current + 1
-            // Возвращаем индекс
-            return res
-        })
-    }, 3000)
-    // Выключаем интервал
-    return () => clearInterval()
-}, [])
- 
-// Вычисляем индекс предыдущего слайда
-const prevImgIndex = activeIndex ? activeIndex - 1 : certificate.length - 1
-// Вычисляем индекс следующего слайда
-const nextImgIndex = activeIndex === certificate.length - 1 ? 0 : activeIndex + 1
+export const useChangeCertificate = (certificates, styles) => {
+    const [current, setCurrent] = useState(0)
+	const [visibleSlides] = useState(1)
 
-return {prevImgIndex, nextImgIndex, activeIndex}
+	const nextSlide = () => {
+		const next = current + 1
+		if (next >= certificates?.length) {
+			setCurrent(0)
+		} else {
+			setCurrent(next)
+		}
+	}
+
+	const prevSlide = () => {
+		const prev = current - 1
+		if (prev < 0) {
+			setCurrent(certificates?.length - 1)
+		} else {
+			setCurrent(prev)
+		}
+	}
+
+	const handlePaginationClick = index => {
+		setCurrent(index)
+	}
+
+	const getSlides= () => {
+		const start = current
+		const end = current + visibleSlides + 1
+		return certificates.slice(start, end)
+	}
+
+	const getPaginationItems = () => {
+		const paginationItems = []
+		const totalPages = Math.ceil(certificates?.length / visibleSlides)
+
+		for (let i = 0; i < totalPages; i++) {
+			const isActive = i === current
+			paginationItems.push(
+				<button
+					key={i}
+					onClick={() => handlePaginationClick(i)}
+					className={isActive ? styles.activePage : styles.nonActivePage}
+				>
+					{i + 1}
+				</button>
+			)
+		}
+
+		return paginationItems
+	}
+
+    return {nextSlide, prevSlide, getSlides, getPaginationItems}
 }
