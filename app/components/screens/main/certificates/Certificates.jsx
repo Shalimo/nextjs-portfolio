@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './Certificates.module.scss'
 import { ImArrowLeft } from 'react-icons/im'
 import { ImArrowRight } from 'react-icons/im'
+import CssCert from '../../../../../public/CssCertificate.jpg'
 import { useChangeCertificate } from '../../../../hooks/useChangeCertificate'
 
 const Certificates = ({ certificates }) => {
@@ -40,6 +41,13 @@ const Certificates = ({ certificates }) => {
 						)}
 					</div>
 				))}
+				<Image
+					src={CssCert}
+					alt="not found"
+					width={600}
+					height={450}
+					className={styles.image}
+				/>
 				<ImArrowRight
 					className={styles.rightArrow}
 					onClick={nextSlide}
