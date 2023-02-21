@@ -28,7 +28,7 @@ const Certificates = ({ certificates }) => {
 						{i === 0 && (
 							<div className={styles.certificatesContainer}>
 								<Image
-									src={item?.img?.src}
+									src={`${item?.img?.src}?v=${new Date().getTime()}`}
 									alt="not found"
 									width={600}
 									height={450}
