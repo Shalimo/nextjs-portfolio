@@ -1,10 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import { useState } from 'react'
 import styles from './Certificates.module.scss'
 import { ImArrowLeft } from 'react-icons/im'
 import { ImArrowRight } from 'react-icons/im'
-import MvpCert from '../../../../../public/MvpCertificate.jpg'
 import { useChangeCertificate } from '../../../../hooks/useChangeCertificate'
 
 const Certificates = ({ certificates }) => {
@@ -42,13 +40,6 @@ const Certificates = ({ certificates }) => {
 						)}
 					</div>
 				))}
-				<Image
-					src={MvpCert}
-					alt="not found"
-					width={600}
-					height={450}
-					className={styles.image}
-				/>
 				<ImArrowRight
 					className={styles.rightArrow}
 					onClick={nextSlide}
