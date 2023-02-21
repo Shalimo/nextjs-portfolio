@@ -1,10 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import { useState } from 'react'
 import styles from './Certificates.module.scss'
 import { ImArrowLeft } from 'react-icons/im'
 import { ImArrowRight } from 'react-icons/im'
-import CssCert from '../../../../../public/CssCertificate.jpg'
 import { useChangeCertificate } from '../../../../hooks/useChangeCertificate'
 
 const Certificates = ({ certificates }) => {
@@ -40,13 +38,6 @@ const Certificates = ({ certificates }) => {
 								<div className={styles.subtitle}>{item.subtitle}</div>
 							</div>
 						)}
-						<Image
-							src={CssCert}
-							alt="not found"
-							width={600}
-							height={450}
-							className={styles.image}
-						/>
 					</div>
 				))}
 				<ImArrowRight
