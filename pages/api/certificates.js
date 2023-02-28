@@ -2,7 +2,7 @@ const certificates = [
     {
         id: 1,
         title: '3-month internship',
-        subtitle: 'React, React Native',
+        subtitle: '2 commercial projects, React, React Native ',
         img: 'https://i.ibb.co/3k0FBt2/Mvp-Certificate.jpg'
     },
     {

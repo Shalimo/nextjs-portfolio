@@ -55,7 +55,7 @@
       .subtitle {
         @apply text-base font-bold;
         @include media(mobile) {
-          @apply text-sm;
+          @apply text-xs;
         }
       }
 

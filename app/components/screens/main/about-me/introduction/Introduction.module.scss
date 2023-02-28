@@ -57,7 +57,7 @@
 
 .skillsContainer {
 	@apply h-auto w-auto absolute;
-	z-index: 1000;
+	z-index: 500;
 	@apply border-[#000] border-[1px] border-solid rounded-[10px];
 	@apply flex flex-row justify-center p-[20px] mt-[230px] bg-[#bed9f0];
 	@include media(computer) {
