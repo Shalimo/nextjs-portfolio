@@ -2,7 +2,7 @@ const contacts = [
     {
         id: 1,
         path: 'https://cdn-icons-png.flaticon.com/512/3059/3059954.png',
-        title: '+375 29 626-91-41'
+        title: '+48 571-465-064'
     },
     {
         id: 2,

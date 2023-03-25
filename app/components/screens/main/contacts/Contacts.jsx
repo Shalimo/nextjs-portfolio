@@ -11,9 +11,9 @@ const Contacts = ({ contacts }) => {
 	}, [formRef])
 
 	return (
-		<div id="Contacts" className={styles.container}>
-			<p className={styles.mainTitle}>GET IN TOUCH</p>
-			<div className={styles.contactsContainer}>
+		<div id="Contacts" className={styles.contactsWrapper}>
+			<div className={styles.contactsLeft}>
+				<div className={styles.contactsTitle}>GET IN TOUCH</div>
 				{contacts
 					? contacts.map((item, i) => {
 							return (
@@ -25,36 +25,45 @@ const Contacts = ({ contacts }) => {
 					  })
 					: null}
 			</div>
-			<form ref={formRef} className={styles.form} onSubmit={sendData}>
-				<input
-					className={styles.input}
-					type="text"
-					placeholder="Your name"
-					name="user_name"
-				/>
-				<input
-					className={styles.input}
-					type="text"
-					placeholder="Your email"
-					name="user_email"
-				/>
-				<textarea
-					className={styles.textarea}
-					rows="5"
-					placeholder="Your message"
-					name="message"
-				></textarea>
-				<button className={styles.submitButton}>Submit</button>
-			</form>
-			{error && <div className={styles.noData}>Not all data entered</div>}
-			{loading && (
-				<div className={styles.spinner}>
-					<Spinner />
-				</div>
-			)}
-			{done && (
-				<div className={styles.successMessage}>Message sent successfully</div>
-			)}
+			<div className={styles.contactsRight}>
+				<div className={styles.contactsTitle}>EMAIL ME HERE</div>
+				<form ref={formRef} className={styles.form} onSubmit={sendData}>
+					<div className="flex flex-col">
+						<input
+							className={styles.input}
+							type="text"
+							placeholder="Your name"
+							name="user_name"
+						/>
+						<input
+							className={styles.input}
+							type="text"
+							placeholder="Your email"
+							name="user_email"
+						/>
+						<textarea
+							className={styles.textarea}
+							rows="5"
+							placeholder="Your message"
+							name="message"
+						></textarea>
+					</div>
+					<button className={styles.submitButton}>Submit</button>
+					{error && (
+						<div className={styles.noData}>Please fill in all fields</div>
+					)}
+					{loading && (
+						<div className={styles.spinner}>
+							<Spinner />
+						</div>
+					)}
+					{done && (
+						<div className={styles.successMessage}>
+							Message sent successfully
+						</div>
+					)}
+				</form>
+			</div>
 		</div>
 	)
 }
