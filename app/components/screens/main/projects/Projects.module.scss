@@ -76,14 +76,14 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	@apply mr-4 mt-4;
+	@apply mr-[13px] mt-4;
 	z-index: 1000;
 }
 
 .bottomContent {
 	position: absolute;
 	bottom: 0;
-	@apply mb-4 ml-4;
+	@apply mb-4 ml-[13px];
 }
 
 .projectName {

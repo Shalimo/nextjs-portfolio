@@ -112,7 +112,7 @@
 	}
 
 	.contactsTitle {
-		@apply text-[60px] mb-[80px] text-white;
+		@apply text-[60px] mb-[80px] text-white text-center;
 
 		@include media(laptop) {
 			@apply mb-[20px];
