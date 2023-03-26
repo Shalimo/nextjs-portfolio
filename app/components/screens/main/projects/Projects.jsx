@@ -1,3 +1,4 @@
+import { ColorGuide } from './color-guide/ColorGuide'
 import styles from './Projects.module.scss'
 import ProjectsItem from './ProjectsItem'
 
@@ -8,6 +9,7 @@ const Projects = ({ projects }) => {
 				<p className={styles.title}>Portfolio</p>
 				<p className={styles.subtitle}>Creative Works</p>
 			</div>
+			<ColorGuide />
 			<div className={styles.projectsContainer}>
 				{projects
 					? projects.map(item => {

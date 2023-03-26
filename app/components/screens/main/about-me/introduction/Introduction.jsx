@@ -1,6 +1,7 @@
 import parse from 'html-react-parser'
 import { useShowSkills } from '../../../../../hooks/useShowSkills'
 import styles from './Introduction.module.scss'
+import LikeButton from '../like/LikeButton'
 
 const Introduction = ({ about, skills }) => {
 	const { showSkills, setShowSkills, ref } = useShowSkills(false)
@@ -19,9 +20,10 @@ const Introduction = ({ about, skills }) => {
 					My skills
 				</button>
 
-				<a target="_blank" href={about?.cv}>
+				<a target="_blank" href={about?.cv} rel="noreferrer">
 					<button className={styles.btn}>Download CV</button>
 				</a>
+				<LikeButton />
 			</div>
 			{showSkills && (
 				<div className={styles.skillsContainer}>

@@ -15,7 +15,7 @@
 }
 
 .container {
-	@apply w-[300px] flex justify-around mr-[130px];
+	@apply w-[400px] flex justify-around mr-[130px];
 	@include media(laptop) {
 		@apply mr-[140px];
 	}

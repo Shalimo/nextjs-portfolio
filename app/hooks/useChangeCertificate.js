@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react'
 
 export const useChangeCertificate = (certificates, styles) => {
-    const [current, setCurrent] = useState(0)
+	const [current, setCurrent] = useState(0)
 	const [visibleSlides] = useState(1)
 
 	const nextSlide = () => {
@@ -26,7 +26,7 @@ export const useChangeCertificate = (certificates, styles) => {
 		setCurrent(index)
 	}
 
-	const getSlides= () => {
+	const getSlides = () => {
 		const start = current
 		const end = current + visibleSlides + 1
 		return certificates.slice(start, end)
@@ -52,5 +52,5 @@ export const useChangeCertificate = (certificates, styles) => {
 		return paginationItems
 	}
 
-    return {nextSlide, prevSlide, getSlides, getPaginationItems}
+	return { nextSlide, prevSlide, getSlides, getPaginationItems }
 }

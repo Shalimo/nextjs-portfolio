@@ -21,7 +21,7 @@
 }
 
 .projectsContainer {
-	@apply grid grid-cols-4 justify-items-center;
+	@apply grid grid-cols-4 justify-items-center mt-[70px];
 	@include media(laptop) {
 		@apply grid grid-cols-3;
 	}
@@ -34,20 +34,33 @@
 }
 
 .projectContainer {
-	@apply w-[250px] h-[350px] border-[1px] border-solid border-[#000] rounded-[10px] m-[40px] relative overflow-hidden opacity-80;
+	@apply w-[250px] h-[410px] border-[1px] border-solid border-[#000] rounded-[10px] relative overflow-hidden;
+	margin: 0 40px 40px 40px;
 }
 
 .projectContainer {
-	@apply bg-[#f7f5f5] opacity-70;
+	@apply bg-[#f7f5f5] opacity-75;
 }
 
 .projectContainer::before {
 	content: '';
 	@apply absolute h-[350px] w-[250px] rounded-[50px];
 	transform: rotate(45deg);
-	background: linear-gradient(-90deg, #000000, #5D57B1);
+	background: linear-gradient(-90deg, #000000, #5d57b1);
 	@apply top-[-55%] left-[45%];
 	z-index: 100;
+}
+
+.projectContainer:nth-child(1)::before {
+	background: linear-gradient(-90deg, #6e429e, #b390cf);
+}
+
+.projectContainer:nth-child(2)::before {
+	background: linear-gradient(-90deg, #6e429e, #b390cf);
+}
+
+.projectContainer:nth-child(3)::before {
+	background: linear-gradient(-90deg, #6e429e, #b390cf);
 }
 
 .image {
@@ -55,13 +68,30 @@
 }
 
 .projectInfo {
-	@apply w-[250px] h-[350px] relative;
+	position: relative;
+	height: 100%; /* установите высоту на 100% */
+}
+
+.topContent {
+	position: absolute;
+	top: 0;
+	right: 0;
+	@apply mr-4 mt-4;
 	z-index: 1000;
-	margin: 96% 0 -241% 17px;
+}
+
+.bottomContent {
+	position: absolute;
+	bottom: 0;
+	@apply mb-4 ml-4;
 }
 
 .projectName {
 	@apply text-[20px] font-semibold;
+}
+
+.languages {
+	@apply text-[15px] font-semibold;
 }
 
 .projectButton {
@@ -78,7 +108,7 @@
 }
 
 .projectButton:hover {
-	box-shadow: 0 0 40px 40px #5D57B1 inset;
+	box-shadow: 0 0 40px 40px #5d57b1 inset;
 	@apply text-cyan-50;
 }
 
@@ -93,10 +123,10 @@
 	font-family: 'Montserrat', sans-serif;
 }
 .infoButton {
-	@apply absolute mt-[-220px] ml-[170px] bg-cyan-50;
+	@apply bg-cyan-50;
 	box-sizing: border-box;
 	@apply border-[1px] border-solid border-[#000] rounded-[0.6em];
-	@apply pt-[0.4em] pb-[0.4em] pl-[0.5em] pr-[0.5em] text-center uppercase font-semibold text-[10px];
+	@apply ml-2 pt-[0.4em] pb-[0.4em] pl-[0.5em] pr-[0.5em] text-center uppercase font-semibold text-[10px];
 	font-family: 'Montserrat', sans-serif;
 	-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
@@ -108,15 +138,15 @@
 }
 
 .infoButton:hover {
-	box-shadow: 0 0 40px 40px #5D57B1 inset;
+	box-shadow: 0 0 40px 40px #5d57b1 inset;
 	@apply text-cyan-50;
 }
 
 .deployButton {
-	@apply absolute mt-[-220px] ml-[170px] bg-cyan-50;
+	@apply bg-cyan-50;
 	box-sizing: border-box;
 	@apply border-[1px] border-solid border-[#000] rounded-[0.6em];
-	@apply ml-[110px] pt-[0.4em] pb-[0.4em] pl-[0.5em] pr-[0.5em] text-center uppercase font-semibold text-[10px];
+	@apply pt-[0.4em] pb-[0.4em] pl-[0.5em] pr-[0.5em] text-center uppercase font-semibold text-[10px];
 	font-family: 'Montserrat', sans-serif;
 	-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
@@ -128,12 +158,12 @@
 }
 
 .deployButton:hover {
-	box-shadow: 0 0 40px 40px #5D57B1 inset;
+	box-shadow: 0 0 40px 40px #5d57b1 inset;
 	@apply text-cyan-50;
 }
 
 .projectInfoContainer {
-	@apply absolute w-[230px] h-auto bg-slate-800 p-[12px] mt-[-190px] ml-[-10px];
+	@apply absolute w-[230px] h-auto bg-slate-800 p-[12px] mt-12 ml-2;
 	z-index: 1000;
 	@apply border-[1px] border-solid border-[#000] rounded-[0.6em] text-cyan-50;
 }

@@ -14,15 +14,15 @@
 }
 
 .buttons {
-	@apply flex;
+	@apply flex justify-center;
 	@include media(laptop) {
-		@apply ml-[25px]
+		@apply ml-[25px];
 	}
 	@include media(tablet) {
-		@apply ml-[25px]
+		@apply ml-[25px] flex-wrap;
 	}
 	@include media(mobile) {
-		@apply ml-[25px]
+		@apply ml-[25px];
 	}
 }
 
@@ -38,7 +38,7 @@
 		@apply pt-[0.5em] pb-[0.5em] pl-[1.8em] pr-[1.8em];
 	}
 	@include media(mobile) {
-		@apply w-auto text-[13px] pt-[0.5em] pb-[0.5em] pl-[1.8em] pr-[1.8em];
+		@apply w-auto text-[13px] pt-[0.5em] pb-[0.5em] pl-[1.4em] pr-[1.4em];
 	}
 }
 
@@ -52,7 +52,7 @@
 }
 
 .btn:hover {
-	box-shadow: 0 0 40px 40px #5D57B1 inset;
+	box-shadow: 0 0 40px 40px #5d57b1 inset;
 }
 
 .skillsContainer {
@@ -90,7 +90,7 @@
 
 .skill {
 	@apply flex flex-col items-center;
-	@apply pt-[12px] pb-[12px] pl-[12px] pr-[12px]; 
+	@apply pt-[12px] pb-[12px] pl-[12px] pr-[12px];
 }
 
 .skillIcon {

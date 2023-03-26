@@ -9,7 +9,7 @@ const Navigation = () => {
 				to="About"
 				spy={true}
 				smooth={true}
-				offset={-130}
+				offset={-180}
 				duration={500}
 			>
 				<div className={styles.box}>
@@ -23,7 +23,7 @@ const Navigation = () => {
 				to="Projects"
 				spy={true}
 				smooth={true}
-				offset={-130}
+				offset={-170}
 				duration={500}
 			>
 				<div className={styles.box}>
@@ -34,10 +34,24 @@ const Navigation = () => {
 			</Link>
 			<Link
 				activeClass={styles.active}
+				to="Certificates"
+				spy={true}
+				smooth={true}
+				offset={-165}
+				duration={500}
+			>
+				<div className={styles.box}>
+					<div className={styles.btn}>
+						<span>CERTIFICATES</span>
+					</div>
+				</div>
+			</Link>
+			<Link
+				activeClass={styles.active}
 				to="Contacts"
 				spy={true}
 				smooth={true}
-				offset={-130}
+				offset={-155}
 				duration={500}
 			>
 				<div className={styles.box}>

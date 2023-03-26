@@ -27,6 +27,16 @@
 		.title {
 			@apply text-[20px] font-semibold text-cyan-50;
 		}
+
+		.titleLink {
+			@apply text-[20px] font-semibold text-cyan-50;
+			transition: color 0.3s ease;
+
+			&:hover {
+				@apply text-[#5d57b1];
+				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+			}
+		}
 	}
 
 	.contactsRight {
@@ -88,7 +98,7 @@
 		}
 
 		.spinner {
-			@apply absolute text-[#fff];
+			@apply absolute text-[#fff] mt-3;
 			@include media(computer) {
 				@apply mt-80;
 			}

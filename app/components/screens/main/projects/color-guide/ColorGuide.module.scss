@@ -1,0 +1,9 @@
+.commercialTag {
+	@apply w-8 h-8 rounded-xl border-[2px] border-white;
+	background: linear-gradient(-90deg, #6e429e, #b390cf);
+}
+
+.petTag {
+	@apply w-8 h-8 rounded-xl border-[2px] border-white;
+	background: linear-gradient(-90deg, #000000, #5d57b1);
+}

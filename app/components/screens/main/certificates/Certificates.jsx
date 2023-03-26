@@ -10,7 +10,7 @@ const Certificates = ({ certificates }) => {
 		useChangeCertificate(certificates && certificates, styles)
 
 	return (
-		<div className={styles.container}>
+		<div id="Certificates" className={styles.container}>
 			<div className={styles.titleContainer}>
 				<p>My certificates</p>
 			</div>

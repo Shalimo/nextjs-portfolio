@@ -19,7 +19,18 @@ const Contacts = ({ contacts }) => {
 							return (
 								<div key={item.id} className={styles.content}>
 									<img className={styles.img} src={item.path} />
-									<p className={styles.title}>{item.title}</p>
+									{item.id === 1 || item.id === 2 ? (
+										<p className={styles.title}>{item.title}</p>
+									) : (
+										<a
+											target="_blank"
+											className={styles.titleLink}
+											href="https://t.me/shponik"
+											rel="noreferrer"
+										>
+											{item.title}
+										</a>
+									)}
 								</div>
 							)
 					  })
