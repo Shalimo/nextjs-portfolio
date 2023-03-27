@@ -26,6 +26,9 @@
 
 		.title {
 			@apply text-[20px] font-semibold text-cyan-50;
+			@include media(mobile) {
+				@apply text-[16px];
+			}
 		}
 
 		.titleLink {
