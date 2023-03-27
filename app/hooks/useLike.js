@@ -4,14 +4,13 @@ import emailjs from 'emailjs-com'
 export const useLike = () => {
 	const formRef = useRef()
 	const [done, setDone] = useState(false)
-	const [like, setLike] = useState(false)
+	const [like, setLike] = useState('')
 	const [isLiked, setIsLiked] = useState('')
 	const [loading, setLoading] = useState(false)
 
 	const sendData = e => {
 		e.preventDefault()
 		setLoading(true)
-		setLike(true)
 		emailjs
 			.sendForm(
 				'service_e09q48u',
@@ -22,7 +21,9 @@ export const useLike = () => {
 			.then(
 				result => {
 					console.log(result.text)
-					setLoading(false)
+					setTimeout(() => {
+						setLoading(false)
+					}, 3500)
 					setDone(true)
 				},
 				error => {
@@ -45,9 +46,24 @@ export const useLike = () => {
 		localStorage.setItem('like', isLiked)
 	}, [isLiked])
 
+	useEffect(() => {
+		const like = localStorage.getItem('isLike')
+		if (like) {
+			setLike(like)
+		}
+	}, [])
+
+	useEffect(() => {
+		localStorage.setItem('isLike', like)
+	}, [like])
+
 	const handleLikeClick = () => {
-		setIsLiked('Like')
+		setTimeout(() => {
+			setIsLiked('Like')
+			setLike(true)
+		}, 100)
+		localStorage.setItem('isLike', 'true')
 	}
 
-	return { isLiked, loading, sendData, formRef, handleLikeClick }
+	return { isLiked, like, loading, sendData, formRef, handleLikeClick }
 }

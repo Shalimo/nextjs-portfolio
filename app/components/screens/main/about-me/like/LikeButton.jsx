@@ -4,7 +4,8 @@ import styles from './LikeButton.module.scss'
 import { BsFillHeartFill } from 'react-icons/bs'
 
 const LikeButton = () => {
-	const { isLiked, loading, sendData, formRef, handleLikeClick } = useLike()
+	const { isLiked, like, loading, sendData, formRef, handleLikeClick } =
+		useLike()
 	return (
 		<div>
 			<form ref={formRef} className={styles.form} onSubmit={sendData}>
@@ -28,12 +29,16 @@ const LikeButton = () => {
 						name="message"
 					></textarea>
 				</div>
-				<button onClick={handleLikeClick} className={styles.submitButton}>
+				<button
+					onClick={handleLikeClick}
+					className={!like ? styles.submitButton : styles.disabledButton}
+					disabled={isLiked !== 'Like' ? false : true}
+				>
 					<BsFillHeartFill
 						className={styles.heart}
 						color={isLiked ? 'red' : 'grey'}
 					/>
-					like
+					{!like ? 'like' : 'liked'}
 				</button>
 			</form>
 			<div className={styles.liked}>

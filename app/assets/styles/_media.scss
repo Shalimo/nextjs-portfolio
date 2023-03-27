@@ -3,7 +3,7 @@ $laptop: 1280px;
 $tablet: 940px;
 $miniTablet: 715px;
 $mobile: 620px;
-$miniMobile: 462px;
+$miniMobile: 471px;
 
 @mixin media($media) {
 	@if $media ==computer {
