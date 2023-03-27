@@ -50,6 +50,9 @@
 		@include media(mobile) {
 			@apply text-lg;
 		}
+		@include media(miniMobile) {
+			@apply text-base;
+		}
 	}
 
 	.subtitle {
