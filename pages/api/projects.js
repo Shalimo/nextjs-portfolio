@@ -48,7 +48,7 @@ const links = [
 		description:
 			'<p>My portfolio.</p><br><p>Used: nextjs API, RestAPI, hooks, custom hooks, localstorage, tailwind, sass modules, mixins.</p>',
 		deploy: 'https://nextjs-portfolio-lovat-five.vercel.app',
-		languages: 'React, NextJS'
+		languages: 'React, NextJS, Firebase'
 	},
 	{
 		id: 7,
