@@ -115,13 +115,13 @@
 	}
 
 	.contactsTitle {
-		@apply text-[60px] mb-[80px] text-white text-center;
+		@apply text-[60px] mb-[80px] text-white;
 
 		@include media(laptop) {
 			@apply mb-[20px];
 		}
 		@include media(mobile) {
-			@apply text-[42px];
+			@apply text-[42px] text-center;
 		}
 	}
 }
