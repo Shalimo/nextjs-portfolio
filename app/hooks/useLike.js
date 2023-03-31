@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import emailjs from 'emailjs-com'
+import { onValue, runTransaction } from 'firebase/database'
+import { reference } from '../services'
 
 export const useLike = () => {
 	const formRef = useRef()
@@ -7,6 +9,7 @@ export const useLike = () => {
 	const [like, setLike] = useState('')
 	const [isLiked, setIsLiked] = useState('')
 	const [loading, setLoading] = useState(false)
+	const [counter, setCounter] = useState(0)
 
 	const sendData = e => {
 		e.preventDefault()
@@ -57,13 +60,24 @@ export const useLike = () => {
 		localStorage.setItem('isLike', like)
 	}, [like])
 
+	useEffect(() => {
+		onValue(reference, snapshot => {
+			const value = snapshot.val()
+			setCounter(value)
+		})
+	}, [])
+
 	const handleLikeClick = () => {
 		setTimeout(() => {
 			setIsLiked('Like')
 			setLike(true)
 		}, 100)
 		localStorage.setItem('isLike', 'true')
+
+		runTransaction(reference, currentValue => {
+			return (currentValue || 0) + 1
+		})
 	}
 
-	return { isLiked, like, loading, sendData, formRef, handleLikeClick }
+	return { isLiked, like, loading, sendData, formRef, handleLikeClick, counter }
 }

@@ -4,8 +4,15 @@ import styles from './LikeButton.module.scss'
 import { BsFillHeartFill } from 'react-icons/bs'
 
 const LikeButton = () => {
-	const { isLiked, like, loading, sendData, formRef, handleLikeClick } =
-		useLike()
+	const {
+		isLiked,
+		like,
+		loading,
+		sendData,
+		formRef,
+		handleLikeClick,
+		counter
+	} = useLike()
 	return (
 		<div>
 			<form ref={formRef} className={styles.form} onSubmit={sendData}>
@@ -38,7 +45,8 @@ const LikeButton = () => {
 						className={styles.heart}
 						color={isLiked ? 'red' : 'grey'}
 					/>
-					{!like ? 'like' : 'liked'}
+					<div className="mr-1">{!like ? 'like' : 'liked'}</div>
+					<div className="text-xs">{`(${counter})`}</div>
 				</button>
 			</form>
 			<div className={styles.liked}>
