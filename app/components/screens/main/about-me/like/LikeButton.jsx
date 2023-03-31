@@ -46,7 +46,9 @@ const LikeButton = () => {
 						color={isLiked ? 'red' : 'grey'}
 					/>
 					<div className="mr-1">{!like ? 'like' : 'liked'}</div>
-					<div className="text-xs">{`(${counter})`}</div>
+					<div className="text-xs">{`(${
+						counter === 0 ? 'loading' : counter
+					})`}</div>
 				</button>
 			</form>
 			<div className={styles.liked}>
